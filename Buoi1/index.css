@@ -1,0 +1,24 @@
+p{
+    color: red;
+}
+
+h1{
+    color: rgb(131, 63, 194);
+}
+
+.a{
+    color: green;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+ul, ol{
+    list-style-type: armenian;
+}
+
+a{
+    text-decoration: none;
+}
