@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body{
+    background-color: #0D021A;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.header{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.top__bar{
+    height: 124px;
+    background-color: #0D021A;
+}
+.top__bar-inner{
+    width: 80%;
+    margin:auto;
+    height: 50%;
+    padding-top:19px;
+}
+.top__bar-logo{
+    background-image: url(https://zjs.zadn.vn/zmp3-desktop/releases/v0.2.6/images/logo-mp-3.svg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 32px;
+    background-size: cover;
+    display:inline-block;
+}
+.top__bar-search{
+    border: 1px rgb(141, 141, 141) solid;
+    height: 32px;
+    width: 50%;
+    display:inline-block;
+    margin: 0px 10%;
+    border-radius: 8px;
+    background-color: #281944;
+}
+.fa-search{
+    color:white;
+    padding:5px;
+}
+.top__nav{
+    height: 50%;
+    width: 80%;
+    margin:auto;
+    padding-top:20px;
+}
+.top__nav-li{
+    display:inline;
+    padding:10px;
+    font-size:14px;
+}
+.top__nav-li a{
+    transition: 0.4s;
+}
+.top__nav-li a:hover{
+    color: #9877ff;
+}
+main{
+    width: 100%;
+    background-color: #0D021A;
+}
+.banner{
+    width: 80%;
+    height: auto;
+    margin:auto;
+}
+.album{
+    display:block;
+    padding-bottom: 30px;
+}
+.container{
+    width: 1026px;
+    margin:auto;
+    padding-left:9.5px;
+    padding-right: 9.5px;
+}
+.wrapper{
+    margin:auto;
+    padding-top:20px;
+    margin: 0 -5px;
+}
+.album__header{
+    color:white;
+    padding-bottom: 20px;
+}
+.item-wrapper{
+    display: inline-block;
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: top;
+}
+.desc{
+    padding: 10px 0px;
+    color:white;
+}
+footer{
+    border-top: 1px solid rgb(44, 44, 44);
+    width: 100%;
+    height: 200px;
+    background-color: #0D021A;
+}
+.footer__top{
+    margin:auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    display:inline-block;
+}
+.footer__top-p{
+    color:rgb(105, 105, 105);
+    display:inline-block;
+    font-size:12px;
+}
+.footer__bot-ul{
+    padding-top:10px;
+    text-align: center;
+}
+.footer__bot-li{
+    display:inline-block;
+    margin:auto;
+    padding:0 10px;
+}
+
+.footer__bot-li a{
+    transition: 0.4s;
+    color:rgb(105, 105, 105);
+
+}
+.footer__bot-li a:hover{
+    color: #9877ff;
+
+}
