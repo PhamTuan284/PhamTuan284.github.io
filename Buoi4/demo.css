@@ -1,0 +1,23 @@
+ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu, .sub-menu {
+    position: relative;
+    width: 150px;
+    background-color: red;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    display: none;
+  }
+  
+  .menu-item:hover > .sub-menu,
+  .sub-item:hover > .sub-menu {
+    display: block;
+  }
