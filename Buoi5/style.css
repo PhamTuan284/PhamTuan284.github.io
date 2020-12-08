@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form {
+  width: 456px;
+  height: 396px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 50px;
+}
+input {
+  display: block;
+}
+.wrapper {
+  width: 92%;
+  margin: auto;
+}
+.inputWrapper {
+  width: 100%;
+  font-size: 17px;
+  padding: 10px 0;
+}
+.input {
+  width: 100%;
+  border-radius: 6px;
+  padding: 14px 10px;
+  font-size: 17px;
+  border: 1px solid #dddfe2;
+  margin: 0px -10px;
+}
+.input:focus {
+  border: 1px solid #1877f2;
+  outline: none;
+}
+.submit {
+  width: 100%;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  margin: 10px 0px;
+  color: white;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.newacc {
+  margin: auto;
+  width: 70%;
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  cursor: pointer;
+}
+.newacc label {
+  cursor: pointer;
+}
+.newacc_input {
+  display: none;
+}
+a.forgot {
+  padding: 16px 0;
+  text-align: center;
+  display: block !important;
+}
+
+.form2 {
+  width: 432px;
+  text-align: left;
+  line-height: 1.34px;
+  position: absolute;
+  background-color: #fff;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-216px) translateY(-268.5px);
+  display: none;
+}
+img {
+  vertical-align: center;
+  max-width: 100%;
+  object-fit: cover;
+}
+.top__img {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.top {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+.top__heading {
+  color: #1c1e21;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 600;
+  text-align: left;
+}
+.top__text {
+  color: #606770;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.bot {
+  padding: 16px;
+  border-top: 1px solid #dadde1;
+}
+.lastname {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  display: inline-block;
+  width: 194px;
+  border-radius: 5px;
+}
+.lastname input,
+.firstname input {
+  width: 170px;
+  padding: 11px;
+  font-size: 15px;
+  line-height: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+}
+
+.email,
+.password {
+  width: 399px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.email input,
+.password input {
+  padding: 11px;
+  font-size: 15px;
+  line-height: 16px;
+  width: 375px;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+  outline: none;
+}
+.dob__text,
+.sex__text {
+  color: #606770;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 2px;
+  font-weight: normal;
+}
+.dob__select select {
+  border-radius: 4px;
+  color: #1c1e21;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  padding: 0 8px;
+  width: 125px;
+  border: 1px solid #ccd0d5;
+  overflow: visible;
+  outline: none;
+}
+.sex {
+  margin-top: 10px;
+}
+
+.sex__women,
+.sex__man,
+.sex__custom {
+  border: 1px solid #ccd0d5;
+  display: inline-block;
+  height: 36px;
+  margin: 8px 6px 6px;
+  width: auto;
+  position: relative;
+  border-radius: 4px;
+  position: relative;
+}
+.sex .sex__women {
+  margin-left: 0px;
+}
+.sex label {
+  color: #1c1e21;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 36px;
+  padding: 0 28px 0 10px;
+  width: 104.69px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.sex .sex__man label {
+  width: 115.05px;
+}
+.sex .sex__custom label {
+  width: 136.25px;
+}
+.sex input {
+  height: 36px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  margin: 0;
+}
+.footer {
+  width: 399px;
+  font-family: inherit;
+}
+.footer p {
+  width: auto;
+  color: #777;
+  font-size: 12px;
+  margin: 1em 0;
+  line-height: 1.5;
+}
+.footer a {
+  display: inline;
+}
+
+.regis {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background: none;
+  background-color: #00a400;
+  border-radius: 6px;
+  font-size: 18px;
+  height: 36px;
+  padding: 0 32px;
+  margin: 10px 0;
+  min-width: 194px;
+  cursor: pointer;
+}
+.regis-p{
+    padding-top: 17px!important;
+}
+main {
+  position: relative;
+}
+.background {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 3333;
+}
+.noDisplay {
+  display: none;
+}
+label {
+  cursor: pointer;
+}
+input.newacc_input:checked + .background,
+.form2 {
+  display: block;
+}

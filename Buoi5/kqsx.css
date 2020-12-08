@@ -1,0 +1,30 @@
+/* .container{
+    width: 100%;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+} */
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size:25px;
+}
+th{
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+}
+.red{
+    color: red;
+}
+caption{
+    font-size:30px;
+    font-weight: bold;
+    color:rgb(172, 37, 37);
+}
