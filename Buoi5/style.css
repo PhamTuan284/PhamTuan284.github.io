@@ -23,6 +23,7 @@ input {
   width: 100%;
   font-size: 17px;
   padding: 10px 0;
+  margin-left: 10px;
 }
 .input {
   width: 100%;
@@ -256,8 +257,8 @@ img {
   min-width: 194px;
   cursor: pointer;
 }
-.regis-p{
-    padding-top: 17px!important;
+.regis-p {
+  padding-top: 17px !important;
 }
 main {
   position: relative;
