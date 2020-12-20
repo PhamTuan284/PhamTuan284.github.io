@@ -255,11 +255,12 @@
 // sao1();
 
 // function sao2() {
-//     for (i = 0; i < 5; i++){
-//         for (j = 4; j >= i; j--){
+//     for (i = 5; i >0 ; i--){
+//         for (j = 1; j < i; j++)
+//             document.writeln("&nbsp;&nbsp;");
+//         for (j = 6; j > i; j--)
 //             document.writeln("*");
-//         }
-//         document.writeln("<br/>");
+//             document.writeln("<br>");
 //     }
 // }
 // sao2();
@@ -279,26 +280,70 @@
 //   for (i = 0; i < 5; i++){
 //     for (j = 4; j > i; j--)
 //         document.writeln("&nbsp;&nbsp;");
-//     for (j = 4; j < i; j++)
-//         document.writeln("&nbsp;&nbsp;");
 
-//     for (j = 0; j < i * 2 + 1; j++)
+//     for (j = 0; j < i * 2 +1; j++)
 //         document.writeln("*");
 //         document.writeln("<br>");
 //   }
 // }
 // sao4()
 
+// function sao5() {
+//     for (i = 0; i < 5; i++){
+//         for (j = 4; j >= i; j--){
+//             document.writeln("*");
+//         }
+//         document.writeln("<br/>");
+//     }
+// }
+// sao5();
+
+// function sao6(){
+//   for (i = 0; i < 5; i++){
+//     for (j = 0; j < i; j++)
+//         document.writeln("&nbsp;&nbsp;");
+//     for (j = 6; j >= i * 2; j--)
+//         document.writeln("*");
+//         document.writeln("<br>");
+//   }
+// }
+// sao6();
+
+// function sao7() {
+//     for (i = 5; i >0 ; i--){
+//         for (j = 5; j > i; j--)
+//             document.writeln("&nbsp;&nbsp;");
+//         for (j = 0; j < i; j++)
+//             document.writeln("*");
+//             document.writeln("<br>");
+//     }
+// }
+// sao7();
+
 // function sao12(){
 // 	for(i = 0; i < 4; i++){
-// 		for(j = 0; j < 5 * 2 - 1; j++)
+// 		for(j = 0; j < 10 ; j++)
 // 			if((j == 4 - i) || (j == 4 + i))
 // 				document.writeln("*");
 // 			else
 // 				document.writeln("&nbsp;&nbsp;");
 // 				document.writeln("<br>");
 // 	}
-// 	for(j = 0; j < 2 * 5 - 1 ; j++)
+// 	for(j = 0; j < 9 ; j++)
 // 	document.writeln("*");
 // }
 // sao12();
+
+// function sao13(){
+// 	for(i = 0; i < 4; i++){
+// 		for(j = 0; j < 10 ; j++)
+// 			if((j == 4 - i) || (j == 4 + i))
+// 				document.writeln("*");
+// 			else
+// 				document.writeln("&nbsp;&nbsp;");
+// 				document.writeln("<br>");
+// 	}
+// 	for(j = 0; j < 9 ; j++)
+// 	document.writeln("*");
+// }
+// sao13();
