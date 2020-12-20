@@ -49,6 +49,11 @@
 //     console.log("Nhập sai, mời bạn nhập lại");
 // }
 
+// let a = +prompt("Nhập số phút");
+// var m = a%60 
+// var h = (a - m)/60 
+// console.log(h + "h" + m + "m");
+
 // bài 1: nhập vào 3 số, in ra số lớn nhất
 // let a = +prompt("Nhập số thứ nhất"),
 //     b = +prompt("Nhập số thứ hai"),
@@ -151,4 +156,3 @@
 // } else {
 //     console.log("Bạn đã nhập sai, hãy nhập lại");
 // }
-
