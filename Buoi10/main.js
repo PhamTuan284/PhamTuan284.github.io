@@ -1,5 +1,4 @@
-//closure, scope
-//bai 1
+// bai 1
 // function multiplicationTables() {
 //     for (let i = 2; i <= 9; i++){
 //         for (let j = 1; j <= 10; j++){
@@ -28,7 +27,7 @@
 // }
 // fizzBizz();
 
-//bài 3
+// bài 3
 // function commonMultiple() {
 //     let result = 0;
 //     document.write("Bội chung của 3 và 5 là ")
@@ -172,7 +171,6 @@
 //                 }
 //             }
 //         }
-
 //         //UCLN
 //         if (a > b) {
 //             for (let i = a; i > 0; i--){
@@ -277,16 +275,25 @@
 // sao3()
 
 // function sao4(){
-//   for (i = 0; i < 5; i++){
+//   for (i = 0; i < 3; i++){
 //     for (j = 4; j > i; j--)
 //         document.writeln("&nbsp;&nbsp;");
-
-//     for (j = 0; j < i * 2 +1; j++)
+//     // for (j = 4; j < i; j++)
+//     //     document.writeln("&nbsp;&nbsp;");
+//     for (j = 0; j < i *2+1; j++)
 //         document.writeln("*");
-//         document.writeln("<br>");
+//       document.writeln("<br>");
 //   }
+//     for (i = 5; i > 3; i--){
+//         for (j = 5; j < i; j++){
+//             document.writeln("&nbsp;&nbsp;");
+//         }
+//         for (j = 5; j > i *2+1; j--)
+//         document.writeln("*");
+//       document.writeln("<br>");
+//     }
 // }
-// sao4()
+// sao4();
 
 // function sao5() {
 //     for (i = 0; i < 5; i++){
@@ -330,20 +337,23 @@
 // 				document.writeln("<br>");
 // 	}
 // 	for(j = 0; j < 9 ; j++)
-// 	document.writeln("*");
+// 	    document.writeln("*");
 // }
+    
 // sao12();
 
-// function sao13(){
-// 	for(i = 0; i < 4; i++){
-// 		for(j = 0; j < 10 ; j++)
-// 			if((j == 4 - i) || (j == 4 + i))
-// 				document.writeln("*");
-// 			else
-// 				document.writeln("&nbsp;&nbsp;");
+// function sao13() {
+//     for(j = 0; j < 9 ; j++)
+//         document.writeln("*");
+//         document.writeln("<br>");
+// 	for(i = 0; i < 4; i++)
+//         for (j = 0; j < 10; j++)
+//             if ((j == 4 - i) || (j == 4 + i)) 
+//                 document.writeln("&nbsp;&nbsp;");
 // 				document.writeln("<br>");
-// 	}
-// 	for(j = 0; j < 9 ; j++)
-// 	document.writeln("*");
+//             else
+//                 document.writeln("*");
+        
+	
 // }
 // sao13();
