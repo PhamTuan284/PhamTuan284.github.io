@@ -1,3 +1,83 @@
+// let user = {
+//     name: "Tuan",
+//     age: 24,
+//     lastName: "Pham"
+// }
+// // console.log("name" in user)
+
+// // let key = "age";
+// // console.log(key in user);
+// // user[key] = 28;
+// // console.log(key in user);
+
+// for (let k in user) {
+//     console.log(k + ": " + user[k]);
+// }
+// //k lặp qua các key trong object -> user[k] = user[name]...
+
+// function change(a) {
+//     a.name = "Ba";
+// }
+
+// change(user);
+// console.log(user);
+
+// let object = {
+//     a: 1,
+//     b: 2,
+//     c: "a",
+//     d: 5
+// }
+
+// function double(obj) {
+//     for (let k in obj) {
+//         if (typeof obj[k] == "number") {
+//             obj[k] = obj[k] * obj[k];
+//         }
+//     }
+//     console.log(obj);
+// }
+
+// // double(object);
+// let copyCat = {}
+
+// function copy(target, source) {
+//     // for (let k in source) {
+//     //     target[k] = source[k];
+//     // }
+//     Object.assign(target, source);
+//     copyCat.a = 2;
+
+//     for (let k in target) {
+//         if (typeof target[k] == "number") {
+//             target[k] = target[k] * target[k];
+//         }
+//     }
+
+//     console.log(target, source);
+// }
+// copy(copyCat, object);
+
+// let user = {
+//     name: "Tuan",
+//     age: 24,
+//     hi() {
+//         console.log("Hello, my name is "+this.name);
+//     },
+//     getKeys() {
+//         for (let k in this) {
+//             console.log(k);
+//         }
+//     },
+//     getValues() {
+//         for (let k in this) {
+//             console.log(this[k]);
+//         }
+//     }
+// }
+
+// user.hi();
+
 // 1. Viết hàm tạo Weapon với các thuộc tính name, damage, ...
 function Weapon(name, damage) {
     this.name = name;
@@ -28,11 +108,11 @@ let thanos = new Player("Thanos", 999, infinityGauntlet),
     tonyStark = new Player("Tony Stark", 50, ironManSuit),
     steveRogers = new Player("Steve Rogers", 30, captainShield);
 
-console.log(thanos.attack());
-console.log(tonyStark.attack());
-console.log(steveRogers.attack());
-tonyStark.changeWeapon(infinityGauntlet);
-console.log(tonyStark.weapon);
+// console.log(thanos.attack());
+// console.log(tonyStark.attack());
+// console.log(steveRogers.attack());
+// tonyStark.changeWeapon(infinityGauntlet);
+// console.log(tonyStark.weapon);
 
 // 4. Tạo một object calculator, có các thuộc tính a, b là 2 số, và các phương thức:
 // a. get(a, b) tham số nhận vào là 2 số a, b
@@ -73,7 +153,7 @@ let calculator = {
         return this;
     }
 }
-calculator.get(4, 5).add();
+// calculator.get(4, 5).add();
 
 // 1. Viết hàm tạo Counter, có thuộc tính count, và các phương thức
 // - count là tham số truyền vào, mặc định = 0
@@ -97,7 +177,7 @@ function Counter(count = 0) {
     }
 }
 let counter = new Counter();
-counter.up().up().get().down().get();
+// counter.up().up().get().down().get();
 
 // 2. Viết hàm tạo Girl có các thuộc tính và phương thức tùy ý 😅
 function Girl(name, age, skill) {
@@ -108,9 +188,9 @@ function Girl(name, age, skill) {
         return console.log("Hello, my name is " + this.name)
     }
 }
-let maria = new Girl("Maria", 18, "Excellence");
-console.log(maria);
-maria.talk();
+// let maria = new Girl("Maria", 18, "Excellence");
+// console.log(maria);
+// maria.talk();
 
 // 3. Viết hàm tạo Boy có các thuộc tính và phương thức tùy ý 😉 (Boys, you know what I mean?)
 function Boy(name, age, appearance) {
@@ -121,6 +201,6 @@ function Boy(name, age, appearance) {
         return console.log("abcxxx")
     };
 }
-let tuan = new Boy("Tuan", 24, "handsome");
-console.log(tuan);
-tuan.flirt();
+// let tuan = new Boy("Tuan", 24, "handsome");
+// console.log(tuan);
+// tuan.flirt();
