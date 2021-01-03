@@ -14,7 +14,7 @@ let body = document.querySelector("body");
 body.innerHTML = '<div class="toDo"></div> <div class="doing"></div> <div class="completed"></div>';
 
 let todo = document.querySelector(".toDo");
-todo.innerHTML = '<input type="text" placeholder="What you want to do?">';
+todo.innerHTML = '<input type="text" placeholder="What you want to do?"> <p>+</p> <i class="fas fa-plus"></i> ';
 
 let doing = document.querySelector(".doing");
 let completed = document.querySelector(".completed");
