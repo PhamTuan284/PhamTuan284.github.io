@@ -1,3 +1,146 @@
+// //viết hàm ngẫu nhiên từ 0 đến n
+// let rand1 = (n) => Math.floor(Math.random() * n);
+// // chuyển đổi 1 số từ hệ có số này sang hệ cơ số khác
+// // 
+// function convert(n,c1,c2) {
+//     return parseInt(n, c1).toString(c2);
+// }
+// convert(255, 10, 16)
+// //tạo số ngẫu nhiên từ a sang b
+// function rand2(a,b) {
+//     return Math.floor((Math.random() * b) + a);
+// }
+
+// //mã màu ngẫu hiên HEX
+// function hex() {
+//     return Math.floor(Math.random() * 255).toString(16)
+//         + Math.floor(Math.random() * 255).toString(16)
+//         + Math.floor(Math.random() * 255).toString(16);
+// }
+
+// //cắt chuỗi từ vị trí đầu tiên tới vị trí chỉ định VD: "abcd",2 =>"abc"
+// function cut(s, index) {
+//     return s.substring(0, index + 1);
+// }
+// cut("abcd", 2);
+// // đổi một tên thành tên viết tắt VD: "Ba Nguyễn" -> Ba N.
+// function short(s) {
+//     let space = s.indexOf(" ");
+//     return s.substring(0, space + 2) + ".";
+// }
+
+// // viết hàm ẩn địa chỉ email VD: tuanpham22790@gmail.com -> tu...@gmail.com
+// function email(s) {
+//     return s.replace(s.substring(2, s.indexOf("@")) , "...")
+// }
+// email("tuanpham22@gmail.com");
+
+//array
+// viết hàm arr1._concat(arr2) gộp các phần tử của mảng vào arr2 vào arr1
+// let arr = [1, 2, 3];
+// arr._concat = function (arr2) {
+//     let result = [];
+//     for (let i = 0; i < this.length; i++){
+//         result[result.length] = this[i];
+//     };
+//     for (let i = 0; i < arr2.length; i++){
+//         result[result.length] = arr2[i];
+//     }; 
+// }
+// console.log(arr._concat([3, 4]));
+
+// // push(value) thêm giá trị vào cuối mảng
+// let arr = [1,2,3]
+// arr._push = function (value) {
+//     this[this.length] = value;
+//     return this;
+// }
+
+// // pop() xóa ptu cuối mảng, đồng thời trả về giá trị của phần tử bị xóa
+// arr._pop = function () {
+//     let result = [];
+//     for (let i = 0; i < this.length; i++){
+//         result[result.length] = this[i];
+//     };
+//     let del = result[result.length - 1];
+//     console.log("Phan tu bi xoa " + del);
+//     result.length = result.length - 1;
+//     return result;
+// }
+
+// // indexOf(value) tìm và trả về index của ptu, nếu k có trả về -1
+// arr._indexOf = function (value) {
+//     let index = -1;
+//     for (let i = 0; i < this.length; i++){
+//         if (value == this[i]) {
+//             return i;
+//         }
+//     }
+//     return index;
+// }
+
+// // reverse() đảo ngược giá trị mảng
+// arr._reverse = function () {
+//     for (let i = 0, j = this.length - 1; i < j; i++,j--){
+//             let temp = this[i];
+//             this[i] = this[j];
+//             this[j] = temp;
+//     }
+//     return this;
+// }
+
+// arr._reverse();
+
+// //
+// function f(number) {
+//     console.log(number);
+// }
+
+// arr._forEach = function (callback) {
+//     for (let i = 0; i < this.length; i++){
+//         callback(this[i])
+//     }
+// }
+
+// arr._forEach(f);
+
+// //filter
+// function f(object) {
+    
+// }
+
+// arr._filter = function (callback) {
+//     let result = [];
+//     for (let i = 0; i < this.length; i++){
+//         if (callback[this[i]]) {
+//             result.push(this[i]);
+//         } 
+//     }   
+//     return result
+// } 
+
+//map
+let arr = [
+    { name: "Ba", age: 29 },
+    { name: "Bon", age:3}
+];
+arr._map = function (callback) {
+    let result = [];
+    for (let i = 0; i < this.length; i++){
+        result.push(callback(this[i]))
+    }
+    return result;
+}
+
+// reduce
+arr._reduce = function (callback, inditial) {
+    let accumulator = inditial;
+    for (let i = 0; i < this.length; i++){
+        accumulator = callback(accumulator, this[i])
+    }
+    return accumulator
+}
+arr._reduce((sum, i) => (sum += i.age), 0);
 
 // 1. Viết hàm chuyển đổi một chuỗi thành dạng capitalize. VD: “hello world” => “Hello World”
 function capitalize(string) {

@@ -1,3 +1,170 @@
+// //1
+// let tbc = [1, 2, 3, 4, 5, 6, 7, 8];
+// function caculator(arr) {
+//     result = 0;
+//     count = 0;
+//     for (let i = 0; i < arr.length; i++){
+//         result += arr[i];
+//         count++
+//     }
+//     return result / count;
+// }
+
+// // //2. Cho một mảng số, viết hàm tìm index của một số trong mảng
+// function indexArr(arr,n) {
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] === n) {
+//             return i;
+//         }
+//     }
+// }
+// indexArr(tbc, 5);
+
+// // //3. Viết hàm sao chép một mảng số
+// let copy = (arr) => arr.map((i) => i);
+
+
+// // //4. Cho một mảng số, viết hàm tìm giá trị lớn nhất trong mảng
+// function maxArr(arr) {
+//     let max = arr[0];
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+
+// // //5. Viết hàm đổi chỗ vị trí 2 phần tử trong mảng
+// function swap(arr, n1, n2) {
+//     let temp = arr[n1];
+//     arr[n1] = arr[n2];
+//     arr[n2] = temp;
+//     return arr;
+// }
+
+// // //6. Cho một mảng số đã được sắp xếp tăng dần, viết hàm tìm số lớn thứ 2 trong mảng
+// function max2(arr) {
+//     // let snd = arr[arr.length - 1];
+//     // for (let i = arr.length - 1; i >= 0; i--){
+//     //     if (arr[i] < snd) {
+//     //         snd = arr[i];
+//     //         break;
+//     //     }
+//     // }
+//     // return snd;
+// }
+// max2(tbc);
+
+// // //7. Viết hàm chuyển đổi một chuỗi thành dạng capitalize. VD “hello world” => “Hello World”
+// function capitalize(string) {
+//     let space = string.indexOf(" ");
+//     let newString = string.charAt(0).toUpperCase() + string.slice(1);
+//     return newString.replace(string[space + 1], string[space + 1].toUpperCase());
+// }
+// capitalize("string hello world");
+
+// // //8. Viết hàm tìm số lần xuất hiện lớn nhất của một phần tử trong mảng
+// // function showUp(arr) {
+// //     return arr.reduce(function(a, b){
+// //         a[b] = a[b] + 1 || 1
+// //         return a;
+// //       }, {});
+// // }
+// // showUp(1, 2, 3, 4, 5, 6, 4, 2, 3, 2, 3, 4);
+
+// // //9. Viết hàm cắt chuỗi thành một mảng có độ dài chỉ định. VD “Hello”, 2 => [“He”, “ll”, “o”]
+// function cutStr(string, n) {
+//     let newArr = [];
+//     for (let i = 0, j=0; i <= string.length; i+=n,j++){
+//         newArr[j] = string.slice(i, i+n);
+//     }
+//     return newArr;
+// }
+// cutStr("Hello",3);
+
+// // //10. Viết hàm tách chuỗi thành một mảng các chuỗi con. VD “dog” => [“d”, “do”, “dog”, “og”, “g”]
+// function cutStr2(string) {
+//     let newArr = [];
+//     for (let i = string.length, j = 0; i > 1; i--, j++){
+//         newArr[j] = string.slice(i-1);
+//     }
+//     for (let i = 0, j = newArr.length; i < string.length; i++, j++){
+//         newArr[j] = string.slice(i);
+//     }
+//     return newArr;
+// }
+// cutStr2("dog");
+
+// // // 11. Cho một mảng số, viết hàm loại bỏ số trùng lặp trong mảng. VD [1,2,2,3] => [1,2,3]
+// function duplicate(arr) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//       if (result.indexOf(arr[i]) === -1) result.push(arr[i]);
+//     }
+//     return result;
+// }
+// duplicate([1, 2, 3, 4, 5, 6, 3, 3, 2]);
+
+// // //12. Viết hàm trả về một mảng lưu dãy số Fibonacci từ 0 -> n. VD 8 => [0, 1, 1, 2, 3, 5, 8, 13]
+// let fibonacci = (num) => {
+//     var a = 1,
+//       b = 0,
+//       temp;
+//     while (num > 0) {
+//       temp = a;
+//       a = a + b;
+//       b = temp;
+//       num--;
+//     }
+//     return b;
+//   }
+//   let createFibonacciArray = (n) => {
+//     let result = [];
+//     for (let i = 0; i < n; i++) {
+//       result.push(fibonacci(i));
+//     }
+//     return result;
+//   }
+//   createFibonacciArray(8);
+
+// //13. Viết hàm trả về một mảng các số trùng nhau trong 2 mảng. VD [1,2,3], [2,3,4] => [2,3]
+// let arr1 = [1, 2, 3];
+// let arr2 = [2, 3, 4];
+// let findSimilar = (arr1, arr2) => {
+//   let result = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr2.indexOf(arr1[i]) != -1 && result.indexOf(arr1[i]) == -1)
+//       result.push(arr1[i]);
+//   }
+//   for (let i = 0; i < arr2.length; i++) {
+//     if (arr1.indexOf(arr2[i]) != -1 && result.indexOf(arr2[i]) == -1)
+//       result.push(arr2[i]);
+//   }
+//   return result;
+// };
+// findSimilar(arr1, arr2);
+
+// //14. Viết hàm trả về một mảng các số không trùng nhau trong 2 mảng. VD [1,2,3], [2,3,4] => [1,4]
+// let arr1 = [1, 2, 3];
+// let arr2 = [2, 3, 4];
+// let findDefference = (arr1, arr2) => {
+//   let result = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr2.indexOf(arr1[i]) == -1) result.push(arr1[i]);
+//   }
+//   for (let i = 0; i < arr2.length; i++) {
+//     if (arr1.indexOf(arr2[i]) == -1) result.push(arr2[i]);
+//   }
+//   return result;
+// };
+// findDefference(arr1, arr2);
+
+// // //15. Viết hàm loại bỏ các giá trị “false” khỏi mảng. VD [null, 1, 0, NaN, “”] => [1]
+// arr = [];
+// arr.filter((i) => !!i);
+
+
 // 1. Viết hàm sắp xếp một mảng số nguyên
 // sắp xếp từ bé đến lớn
 let arrangeNumber = (arr) => arr.sort((a, b) => a - b)
