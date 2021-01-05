@@ -14,7 +14,7 @@ let body = document.querySelector("body");
 body.innerHTML = '<div class="toDo"></div> <div class="doing"></div> <div class="completed"></div>';
 
 let todo = document.querySelector(".toDo");
-todo.innerHTML = '<input type="text" placeholder="What you want to do?"> <p>+</p> <i class="fas fa-plus"></i> ';
+todo.innerHTML = '<input type="text" id="addInput" placeholder="What you want to do?"> <p id="add" onclick="clickAdd()">+</p> ';
 
 let doing = document.querySelector(".doing");
 let completed = document.querySelector(".completed");
@@ -25,13 +25,27 @@ completed.innerHTML = "<h4>Completed</h4>";
 for (let i = 0; i < todos.length; i++){
     if (todos[i].completed == false) {
         doing.innerHTML +=`
-        <input type="radio"  name="doing" value="${todos[i].title}">
-        <label for="${todos[i].title}">${todos[i].title}</label><br>`
+        <div id="doingWrapper">
+            <input type="checkbox" id="doingInput" name="doing" value="${todos[i].title}" onClick="clickDone()">
+            <label for="${todos[i].title}">${todos[i].title}</label><br>
+        </div>`
     } else {
         completed.innerHTML +=`
-        <input type="radio" value="${todos[i].title}" checked>
+        <input type="checkbox" id="completedInput" value="${todos[i].title}" checked>
         <label for="${todos[i].title}">${todos[i].title}</label><br>`
     }
 }
 
+function clickAdd() {
+    let addDoing = addInput.value;
+    doing.innerHTML += `
+    <input type="checkbox" id="doingInput" name="doing" value="${addDoing}">
+    <label for="${addDoing}">${addDoing}</label><br>`
+    addInput.value = "";
+}
 
+function clickDone() {
+    for (let i = 0; i < doingWrapper.length; i++){
+        console.log(doingWrapper[i]);
+    }
+}

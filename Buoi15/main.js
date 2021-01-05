@@ -1,3 +1,60 @@
+// let timer = setInterval(() => {
+//     console.log("hello");
+// }, 1000);
+// clearInterval(timer);
+
+// let clock = () => {
+    // let date = new Date(),
+    //     hour = date.getHours(),
+    //     minutes = date.getMinutes(),
+    //     second = date.getSeconds();
+    // if (second == 60) {
+    //     minutes++
+    // }
+    // if (minutes == 60) {
+    //     hour++
+    // }
+    // let timer = setInterval(() => {
+    //     second++
+    // }, 1000);
+    // console.log(hour + ":" + minutes + ":" + second)
+    // return setInterval();
+// }
+// let timer = setInterval(() => {
+//     let date = new Date();
+//     document.querySelector("#clock").innerHTML = date;
+// },1000)
+// clearInterval(timer)
+
+// let p = document.querySelector("#clock");
+// p.innerHTML = ;
+
+// for (node of document.body.children) {
+//     console.log(node);
+// }
+
+// let table = document.body.firstElementChild,
+//     rows = table.firstElementChild.rows;
+// for (let i = 0, j = rows.length -1; i < rows.length; i++, j--){
+//     rows[i].cells[i].style.backgroundColor = "red";
+//     rows[i].cells[j].style.backgroundColor = "red";
+// }
+
+// let red = document.querySelectorAll(".red");
+// for (let i = 0; i < red.length; i++){
+//     red[i].style.backgroundColor = "red";
+// }
+
+// let user = {
+//     name: "Tuan",
+//     age:24,
+// }
+// let el = document.querySelector("#user").children;
+// el = Array.from(el);
+// el.forEach((e) => {
+//     e.innerText = user[e.dataset.prop]
+// });
+
 
 // 1. Đếm xem có tất cả bao nhiêu từ trong 2 đoạn văn có độ dài lớn hơn 8
 // 2. Style cho các từ có độ dài lớn hơn 8 trong p1
