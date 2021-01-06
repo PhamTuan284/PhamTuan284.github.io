@@ -22,11 +22,12 @@ let completed = document.querySelector(".completed");
 doing.innerHTML = "<h4>Doing</h4>";
 completed.innerHTML = "<h4>Completed</h4>";
 
+
 for (let i = 0; i < todos.length; i++){
     if (todos[i].completed == false) {
         doing.innerHTML +=`
         <div id="doingWrapper">
-            <input type="checkbox" id="doingInput" name="doing" value="${todos[i].title}" onClick="clickDone()">
+            <input type="checkbox" id="doingInput" name="doing" value="${todos[i].title}" onClick="">
             <label for="${todos[i].title}">${todos[i].title}</label><br>
         </div>`
     } else {
@@ -34,6 +35,7 @@ for (let i = 0; i < todos.length; i++){
         <input type="checkbox" id="completedInput" value="${todos[i].title}" checked>
         <label for="${todos[i].title}">${todos[i].title}</label><br>`
     }
+    
 }
 
 function clickAdd() {
@@ -44,8 +46,8 @@ function clickAdd() {
     addInput.value = "";
 }
 
-function clickDone() {
-    for (let i = 0; i < doingWrapper.length; i++){
-        console.log(doingWrapper[i]);
-    }
-}
+// function clickDone() {
+//     for (let i = 0; i < doingWrapper.length; i++){
+//         console.log(this.currentTarget);
+//     }
+// }

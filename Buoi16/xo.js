@@ -1,4 +1,5 @@
-let n = +prompt("Nhập số ô");
+// let n = +prompt("Nhập số ô");
+let n = 10;
 var end = false;
 var count = 0;
 var turn = "X";
@@ -36,7 +37,10 @@ var click = function (e) {
         
         console.log(rowIndex,cellIndex);
       
-        if (horizonal(turn,rowIndex,cellIndex) || vertical(turn,rowIndex,cellIndex) || diagonal(rowIndex, cellIndex, turn)) {
+      if (horizonal(turn, rowIndex, cellIndex) ||
+        vertical(turn, rowIndex, cellIndex) ||
+        diagonal1(turn, rowIndex, cellIndex) ||
+        diagonal2(turn, rowIndex, cellIndex)) {
             end = !end;
             next.textContent = "Winner: " + turn;
             reset.hidden = false;
@@ -79,7 +83,7 @@ function vertical(turn, rowIndex, cellIndex) {
       if (countVertical == 5) return true;
     } else break;
   }
-  for (let i = rowIndex + 1; i < n - 1; i++){
+  for (let i = rowIndex + 1; i < n; i++){
     if (board.rows[i].cells[cellIndex].textContent == turn) {
       countVertical++;
       if (countVertical == 5) return true;
@@ -87,44 +91,41 @@ function vertical(turn, rowIndex, cellIndex) {
   }
 }
 
+function diagonal1(turn, rowIndex, cellIndex) {
+  let countDiagonal1 = 1;
 
-function diagonal(rowIndex, cellIndex, turn) {
-  let countDiagonal = 1;
-  let upDiagonal = cellIndex;
-
-  for (let i = rowIndex - 1; i >= 0; i--) {
-    upDiagonal -= 1;
-    if (board.rows[i].cells[upDiagonal].textContent == turn) {
-      countDiagonal++;
-      if (countDiagonal == 5) return true;
-    } else break;
-  }
-  upDiagonal = cellIndex;
-  for (let i = rowIndex + 1; i < n - 1; i++) {
-    upDiagonal -= 1;
-    if (board.rows[i].cells[upDiagonal].textContent == turn) {
-      countDiagonal++;
-      if (countDiagonal == 5) return true;
-    } else break;
+  for (let i = rowIndex - 1, j = cellIndex - 1; i >= 0 && j >= 0; i--, j--) {
+      if (board.rows[i].cells[j].textContent == turn) {
+        countDiagonal1++;
+        if (countDiagonal1 == 5) return true;
+      } else break;
   }
   
-  let downDiagonal = cellIndex;
-  for (let i = rowIndex - 1; i >= 0; i--) {
-    downDiagonal += 1;
-    if (board.rows[i].cells[downDiagonal].textContent == turn) {
-      countDiagonal++;
-      if (countDiagonal == 5) return true;
-    } else break;
+  for (let i = rowIndex + 1, j = cellIndex + 1; i < n && j < n; i++, j++) {
+      if (board.rows[i].cells[j].textContent == turn) {
+        countDiagonal1++;
+        if (countDiagonal1 == 5) return true;
+      } else break;
   }
-  downDiagonal = cellIndex;
-  for (let i = rowIndex + 1; i < n - 1; i++) {
-    downDiagonal += 1;
-    if (board.rows[i].cells[downDiagonal].textContent == turn) {
-      countDiagonal++;
-      if (countDiagonal == 5) return true;
-    } else break;
+  return false;
+}
+
+function diagonal2(turn, rowIndex, cellIndex) {
+  let countDiagonal2 = 1;
+
+  for (let i = rowIndex - 1, j = cellIndex + 1; i >= 0 && j < n; i--, j++) {
+      if (board.rows[i].cells[j].textContent == turn) {
+        countDiagonal2++;
+        if (countDiagonal2 == 5) return true;
+      } else break;
   }
   
+  for (let i = rowIndex + 1, j = cellIndex - 1; i < n && j >= 0; i++, j--) {
+      if (board.rows[i].cells[j].textContent == turn) {
+        countDiagonal2++;
+        if (countDiagonal2 == 5) return true;
+      } else break;
+  }
   return false;
 }
 
