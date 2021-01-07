@@ -12,7 +12,7 @@ let button = document.querySelector('.button');
 
 button.onclick = function () {
     let li = document.createElement("li");
-    li.innerHTML = "Alert";
+    li.innerHTML = "A Ba đẹp trai";
     ulAlert.append(li);
     let time = setInterval(function () {
         ulAlert.removeChild(li)
