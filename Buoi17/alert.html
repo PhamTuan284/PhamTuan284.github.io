@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .button{
+            background-color: white;
+            padding:20px 40px ;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .ul-alert{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .ul-alert li{
+            background-color: wheat;
+            margin: 10px;
+            padding: 20px 40px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        Click me
+    </div>
+    <div class="alert">
+        <ul class="ul-alert">
+        </ul>
+    </div>
+    <script src="alert.js"></script>
+</body>
+</html>
