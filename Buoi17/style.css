@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+.header{
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    position: relative;
+    z-index: 99999;
+}
+
+.ul{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li{
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: .7;
+    transition: .6s;
+}
+
+.li:hover{
+    opacity: 1;
+}
+
+.dropDown{
+    position: relative;
+}
+.dropDown-item{
+    position: absolute;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    top: 45px;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+.li-dropDown-item{
+    margin: 20px 10px;
+}
+.dropDownShow{
+    opacity: 1;
+    visibility: visible;
+}
+
+.slideWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  z-index: 4;
+}
+.slide ul {
+  display: inline-block;
+}
+
+.slide ul li {
+  display: inline-block;
+  border: 1px solid rgba(187, 173, 173, 0.541);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: 100%;
+  transition: 0.4s;
+  background-color: white;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+.slide ul li:hover,
+.slide ul li.active {
+  background-color: rgba(187, 173, 173, 0.541);
+}
+
+.aSlide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+
+.slide-img1 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(slide1.jpg);
+}
+.slide-img2 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(slide2.jpg);
+}
+.slide-img3 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(slide3.jpg);
+}
+
+.left-small {
+  position: absolute;
+  top: -30%;
+  left: 0px;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.left-big {
+  position: absolute;
+  top: -68%;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: -13%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.text {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 29%;
+  left: 6%;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.text h2 {
+  font-size: 50px;
+  font-weight: 100;
+  opacity: 0;
+}
+
+.text h4 {
+  font-size: 30px;
+  font-weight: 400;
+  opacity: 0;
+}
+
+.text p {
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 17px;
+  color: #ffffffa8;
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+.text .dash {
+  width: 70px;
+  border-bottom: 2px solid #ffffff;
+  margin: 30px 0px;
+  opacity: 0;
+}
+
+.text .button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 0;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  transition: .4s;
+}
+
+.text .button:hover {
+  background-color: rgba(0, 0, 0, 0.507);
+  font-weight: 100;
+}
+
+.showSlide {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+}
+
+.arrow{
+    position: relative;
+    z-index: 9999;
+    color:white;
+    font-size: 40px;
+    top: 50%;
+}
+
+.arrow .arrowRight{
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.arrow .arrowRight:hover{
+    opacity: .8;
+}
+
+.arrow .arrowLeft{
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.arrow .arrowLeft:hover{
+    opacity: .8;
+}
+
+.showSlide .left-small {
+  animation: left-small 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.showSlide .left-big {
+  animation: left-big 1s forwards;
+}
+
+.showSlide .right {
+  animation: right 1s forwards;
+}
+
+.showSlide .text h2 {
+  animation: texth2 1s ease forwards;
+  animation-delay: 1s;
+}
+.showSlide .text h4 {
+  animation: texth4 1s ease forwards;
+  animation-delay: 1.2s;
+}
+.showSlide .text .dash {
+  animation: textdash 1s ease forwards;
+  animation-delay: 1.5s;
+}
+.showSlide .text p {
+  animation: textp 1s ease forwards;
+  animation-delay: 1.7s;
+}
+.showSlide .text .button {
+  animation: textbutton 1s ease forwards;
+  animation-delay: 2.2s;
+}
+@-webkit-keyframes left-small {
+  from {
+    transform: translateX(-100%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes left-big {
+  from {
+    transform: translateX(-100%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    transform: translateX(100%) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes texth2 {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes texth4 {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes textdash {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes textp {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes textbutton {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+/* .slide ul li i{
+      font-size: 27px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s;
+      color:white;
+  }
+  
+  .silde ul li:hover i{
+      font-size: 10px;
+      opacity: 1;
+      visibility: visible;
+      color:white;
+  }
+  
+  .slide ul li.active i{
+      font-size: 10px;
+      opacity: 1;
+      visibility: visible;
+      transition: 0.4s;
+      color:white;
+  }
+  
+  .slide ul li.active {
+      border: 1px solid white;
+      transition: 0.4s;
+      background-color: transparent;
+  } */

@@ -1,20 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Slide</title>
 
-</head>
-<body>
-    <form action="" name="todo">
-        <input type="text" name="username">
-        <button type="submit" name="send">submit</button>
-    </form>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="ul">
+          <li class="li">Home</li>
+          <li class="li">About Us</li>
+          <li class="li">Gallery</li>
+          <li class="li dropDown">
+            Drop Down
+            <i class="fas fa-caret-down"></i>
+            <div class="dropDown-item ">
+              <ul class="ul-dropDown-item">
+                <li class="li-dropDown-item">Drop Down 1</li>
+                <li class="li-dropDown-item">Drop Down 2</li>
+                <li class="li-dropDown-item">Drop Down 3</li>
+                <li class="li-dropDown-item">Drop Down 4</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <a href="https//google.com" id="a">link</a>
+    <main class="slideWrapper">
+      <div class="slides">
+        <div class="aSlide showSlide">
+          <div class="slide-img1"></div>
+          <img src="tgslide1.png" alt="" class="left-small" />
+          <img src="tgslide1.png" alt="" class="left-big" />
+          <img src="tgphaislide1.png" alt="" class="right" />
+          <div class="text">
+            <h2>01</h2>
+            <h4>CHARLIE ltd</h4>
+            <div class="dash"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+              sunt quidem, minima placeat suscipit optio odit architecto
+              reprehenderit pariatur quisquam temporibus unde molestiae dolorem,
+              quaerat deleniti dolores, ullam soluta distinctio.
+            </p>
+            <div class="button">See the project</div>
+          </div>
+        </div>
 
-    <script src="script.js"></script>
-</body>
+        <div class="aSlide">
+          <div class="slide-img2"></div>
+          <img src="tgslide2.png" alt="" class="left-small" />
+          <img src="tgslide2.png" alt="" class="left-big" />
+          <img src="tgphaislide2.png" alt="" class="right" />
+          <div class="text">
+            <h2>02</h2>
+            <h4>CHARLIE ltd</h4>
+            <div class="dash"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+              sunt quidem, minima placeat suscipit optio odit architecto
+              reprehenderit pariatur quisquam temporibus unde molestiae dolorem,
+              quaerat deleniti dolores, ullam soluta distinctio.
+            </p>
+            <div class="button">See the project</div>
+          </div>
+        </div>
+
+        <div class="aSlide">
+          <div class="slide-img3"></div>
+          <img src="tgslide3.png" alt="" class="left-small" />
+          <img src="tgslide3.png" alt="" class="left-big" />
+          <img src="tgphaislide3.png" alt="" class="right" />
+          <div class="text">
+            <h2>03</h2>
+            <h4>CHARLIE ltd</h4>
+            <div class="dash"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+              sunt quidem, minima placeat suscipit optio odit architecto
+              reprehenderit pariatur quisquam temporibus unde molestiae dolorem,
+              quaerat deleniti dolores, ullam soluta distinctio.
+            </p>
+            <div class="button">See the project</div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <ul>
+            <li class="active nextSlide"><i class="fas fa-circle"></i></li>
+            <li class="nextSlide"><i class="fas fa-circle"></i></li>
+            <li class="nextSlide"><i class="fas fa-circle"></i></li>
+          </ul>
+        </div>
+
+        <div class="arrow">
+          <span class="arrowRight">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          <span class="arrowLeft">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/70342427de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

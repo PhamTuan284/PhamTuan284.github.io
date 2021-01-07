@@ -12,6 +12,7 @@ td {
   color: white;
   opacity: 1;
   border: none;
+  transition: .5s;
 }
 
 td:hover {
