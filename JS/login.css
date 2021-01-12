@@ -1,0 +1,107 @@
+.button-login{
+    background-color: rgb(94, 255, 73);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color:white;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.background{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.form{
+    background-color: white;
+    position: relative;
+    margin: auto;
+    position: relative;
+    width: 70%;
+    opacity: 0;
+    visibility: hidden;
+}
+.form-content{
+    padding:10px 15px;
+}
+.button-x{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.button-x:hover{
+    background-color: rgba(0, 0, 0, 0.137);
+}
+.form-img{
+    margin:auto;
+    text-align: center;
+    width: 200px;
+    padding-top:20px;
+    margin-bottom: 20px;
+}
+img{
+    vertical-align: middle;
+	height: auto;
+   	max-width: 100%;
+	object-fit: cover;
+}
+label{
+    font-weight: bold;
+    display: block;
+
+}
+input{
+    width: 100%;
+    padding:7px 0px;
+    padding-left: 5px;
+    padding-right: -5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+}
+
+.form-button-login{
+    display: block;
+    width: 100%;
+    background-color: rgb(2, 194, 2);
+    padding: 8px 0px;
+    color:white;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-footer{
+    background-color: gainsboro;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-footer{
+    padding: 7px 15px;
+}
+.cancel-button{
+    display: inline-block;
+    background-color: rgb(255, 73, 73);
+    padding: 10px 10px;
+    color:white;
+    cursor: pointer;
+}
+.cancel-button:hover{
+    background-color: rgb(2, 194, 2);
+}
+.forgotPasswor{
+    display: inline-block;
+    float: right;
+}
+a{
+    color:black;
+}
+a:hover{
+    color: blue;
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}

@@ -35,16 +35,17 @@ img {
 
 /* Class chung */
 .container {
-  max-width: 80%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .row {
   display: flex;
   margin-left: -20px;
   margin-right: -20px;
+  flex-direction: column;
 }
 .center {
   margin: auto;
@@ -100,7 +101,7 @@ img {
   width: 20.84%;
 }
 .col-6 {
-  width: 25.01%;
+  width: 25%;
 }
 .col-7 {
   width: 29.18%;
@@ -220,8 +221,8 @@ img {
 /* author */
 .author {
   background-color: transparent;
-  padding: 1rem;
-  position: sticky;
+  padding-left: 1rem;
+  padding-right: 1rem;
   top: 2rem;
 }
 .author-img {
@@ -263,6 +264,7 @@ img {
 /* post */
 .list-posts {
   margin-right: 20px;
+
 }
 .list-item {
   background-color: #ffff;
@@ -390,3 +392,100 @@ footer {
 .footer--social-item:hover {
   color: #e67272;
 }
+
+@media screen and (min-width:768px){
+  .col-md-1 {
+    width: 4.17%;
+  }
+  .col-md-2 {
+    width: 8.33%;
+  }
+  .col-md-3 {
+    width: 12.5%;
+  }
+  .col-md-4 {
+    width: 16.67%;
+  }
+  .col-md-5 {
+    width: 20.84%;
+  }
+  .col-md-6 {
+    width: 25%;
+  }
+  .col-md-7 {
+    width: 29.18%;
+  }
+  .col-md-8 {
+    width: 33.35%;
+  }
+  .col-md-9 {
+    width: 37.52%;
+  }
+  .col-md-10 {
+    width: 41.69%;
+  }
+  .col-md-11 {
+    width: 45.86%;
+  }
+  .col-md-12 {
+    width: 50%;
+  }
+  .col-md-13 {
+    width: 54.2%;
+  }
+  .col-md-14 {
+    width: 58.37%;
+  }
+  .col-md-15 {
+    width: 62.54%;
+  }
+  .col-md-16 {
+    width: 66.71%;
+  }
+  .col-md-17 {
+    width: 70.88%;
+  }
+  .col-md-18 {
+    width: 75%;
+  }
+  .col-md-19 {
+    width: 79.22%;
+  }
+  .col-md-20 {
+    width: 83.39%;
+  }
+  .col-md-21 {
+    width: 87.56%;
+  }
+  .col-md-22 {
+    width: 91.73%;
+  }
+  .col-md-23 {
+    width: 95.9%;
+  }
+  .col-md-24 {
+    width: 100%;
+  }
+  .row{
+    flex-direction: row;
+  }
+  .container{
+    max-width: 720px;
+  }
+
+}
+/* 
+@media screen and (max-witdh:769px){
+  .col-lg-6{
+    width: 25% !important;
+  }
+  .col-lg-12{
+    width: 50% !important;
+  }
+  .row{
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+    flex-direction: row;
+  }
+} */
