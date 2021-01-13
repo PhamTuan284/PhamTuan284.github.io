@@ -1,0 +1,184 @@
+li{
+    list-style: none;
+    cursor: pointer;
+}
+img{
+	vertical-align: middle;
+	height: auto;
+   	max-width: 100%;
+	object-fit: cover;}
+/* nav */
+nav{
+    margin-bottom: 100px;
+}
+.nav-item{
+    transition: .4s;
+    font-weight: bold;
+}
+.nav-item:hover{
+    color:#ff817e;
+}
+.header-img{
+    position: absolute;
+    right: 0;
+    width: 43.5%;
+    z-index: -1;
+}
+header ul{
+    height: 100%;
+}
+
+/* banner */
+.name{
+    color:#ff817e;
+    letter-spacing: 1.5;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.slogan{
+    font-size: 60px;
+    line-height: 75px;
+    margin-bottom: 25px;
+}
+.desc{
+    color:#555;
+    margin-bottom: 50px;
+}
+.button{
+    background-color: #ff817e;
+    color:white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: .8;
+    padding: 20px 30px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .4s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.button:hover{
+    color:black;
+}
+.banner{
+    height: auto;
+    background-position: left;
+    background-size: contain;
+    background-image: url(https://demo.themeies.com/leospa/images/leaf.png);
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+.play-button{
+    background-color: #fcf5ee;
+    border-radius: 50%;
+    color:#ff817e;
+    display:inline-block;
+    line-height: 44px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.play-button:hover{
+    color:white;
+    background-color: #ff817e;
+}
+.play-text{
+    transition: .4s;
+}
+.play-button:hover  + .play-text{
+    color:#ff817e;
+}
+.banner-bottom{
+    align-items: baseline;
+}
+
+/* main */
+.first{
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.flower1{
+    position: absolute;
+    z-index: -1;
+    left: 16%;
+    max-width: 160px;
+    top:0;
+}
+.flower2{
+    position: absolute;
+    z-index: -1;
+    right:135px;
+    top:50%;
+    transform: translateY(-50%);
+    max-width: 88px;
+}
+.main-logo{
+    margin-bottom: 40px;
+}
+.about{
+    color:#888;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: .8;
+    margin-bottom: 27px;
+}
+.main-slogan{
+    color:#1e2528;
+    font-size: 42px;
+    margin-bottom: 32px;
+}
+.main-desc{
+    color: #888;
+    margin-bottom: 70px;
+}
+.read-more{
+    border-radius: 50px;
+    background-color: #ff817e;
+    color:white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 45px;
+    transition: .4s;
+    display: inline-block;
+    cursor: pointer;
+}
+.read-more:hover{
+    color:black
+}
+.read-more p{
+    margin-bottom: 0;
+}
+
+/* services */
+.service{
+    position: relative;
+    cursor: pointer;
+}
+.service-img{
+    position: absolute;
+    z-index: -1;
+}
+.service-background{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff817e;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.service:hover .service-background{
+    opacity: .9;
+    visibility: visible;
+}
+.service-desc{
+    color:white;
+    margin-top: 20px;
+}
+
