@@ -1,0 +1,8 @@
+.carousel-indicators li{
+    background-color: #ffc3c2 !important;
+    border-radius: 50%;
+    display: inline-block;
+    margin:0 5px;
+    height: 8px !important;
+    width: 8px !important;
+}

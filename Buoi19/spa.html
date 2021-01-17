@@ -3,38 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leospa - Clean & Minimal SCSS HTML5 Template</title>
     <link rel="stylesheet" href="spa.css">
+    <link rel="icon" type="image/x-icon" href="https://demo.themeies.com/leospa/images/favicon.png">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
         <img src="https://demo.themeies.com/leospa/images/spa.png" alt="" class="header-img">
         <div class="container">
-            <nav>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="https://demo.themeies.com/leospa/images/logo.png" alt="" class="logo">
-                    </div>
-                    <div class="col-5">
-                        <ul class="d-flex justify-content-between align-items-end">
-                            <li class="nav-item">HOME</li>
-                            <li class="nav-item">ABOUT</li>
-                            <li class="nav-item">FEATURE</li>
-                            <li class="nav-item">SERVICE</li>
-                            <li class="nav-item">CONTACT</li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+            <div class="container-fluid align-items-end ">
+                <a class="navbar-brand" href="#">
+                    <img src="https://demo.themeies.com/leospa/images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ul-nav">
+                    <li class="nav-item my-2 mx-3">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item my-2 mx-3">
+                    <a class="nav-link " aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item my-2 mx-3">
+                    <a class="nav-link " aria-current="page" href="#">Feature</a>
+                    </li>
+                    <li class="nav-item my-2 mx-3">
+                    <a class="nav-link " aria-current="page" href="#">Service</a>
+                    </li>
+                    <li class="nav-item my-2 mx-3">
+                    <a class="nav-link " aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
                 </div>
+            </div>
             </nav>
         </div>
         <div class="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-8 col-lg-6">
                         <h4 class="name">SPA & BEAUTY CENTER</h4>
                         <h2 class="slogan">Beauty and success starts here.</h2>
                         <p class="desc">
@@ -56,7 +75,7 @@
             <div class="container">
                 <img src="https://demo.themeies.com/leospa/images/china-rose.png" alt="" class="flower1">
                 <img src="https://demo.themeies.com/leospa/images/jasmine.png" alt="" class="flower2">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="main-logo">
                         <img src="https://demo.themeies.com/leospa/images/butterfly.png" alt="">
                     </div>
@@ -66,7 +85,7 @@
                     <div class="main-slogan">
                         Come and you will be Inspired!
                     </div>
-                    <div class="col-10 offset-1 main-desc">
+                    <div class="col-12 col-lg-10 main-desc">
                         <p>It’s the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker
                         </p>
                     </div>
@@ -77,9 +96,8 @@
             </div>
         </section>
         <section class="services">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="service col-3">
+                <div class="row justify-content-between">
+                    <div class="service col">
                         <div class="service-img">
                             <img src="https://demo.themeies.com/leospa/images/service/1.jpg" alt="">
                             <div class="service-background d-flex justify-content-center align-items-center flex-column">
@@ -92,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service col-3">
+                    <div class="service col d-none d-sm-block d-lg-block d-md-block">
                         <div class="service-img">
                             <img src="https://demo.themeies.com/leospa/images/service/2.jpg" alt="">
                             <div class="service-background d-flex justify-content-center align-items-center flex-column">
@@ -106,7 +124,7 @@
                         </div>
                         
                     </div>
-                    <div class="service col-3">
+                    <div class="service col d-none d-sm-block d-md-block d-lg-block">
                         <div class="service-img">
                             <img src="https://demo.themeies.com/leospa/images/service/3.jpg" alt="">
                             <div class="service-background d-flex justify-content-center align-items-center flex-column">
@@ -119,7 +137,7 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="service col-3">
+                    <div class="service col d-md-none d-sm-none d-none d-lg-block">
                         <div class="service-img">
                             <img src="https://demo.themeies.com/leospa/images/service/4.jpg" alt="">
                             <div class="service-background d-flex justify-content-center align-items-center flex-column">
@@ -133,10 +151,353 @@
                         </div>
                     </div>
                 </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="products-info col-12 ">
+                        <div class="row justify-content-center text-center">
+                            <div class="products-title col-12">
+                                <p>Popular Procedures</p>
+                            </div>
+                            <div class="products-desc col-lg-8">
+                                To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="product col-md-4 col-12">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/post/1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Massage Therapy</h5>
+                                  <p class="card-text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.
+
+                                </p>
+                                  <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product col-12 col-md-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/post/2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Executive Beauty Care</h5>
+                                  <p class="card-text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.
+
+                                </p>
+                                  <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product col-12 col-md-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/post/3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Executive Reflexology</h5>
+                                  <p class="card-text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.
+
+                                </p>
+                                  <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+        </section>
+        <section class="slide">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="container">
+                          <div class="row justify-content-center">
+                              <div class="col-10 text-center">
+                                <img src="https://demo.themeies.com/leospa/images/quote.png" alt="" class="my-4">
+                                <p class="my-4 slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laudantium cumque dicta quam sapiente hic ipsa molestiae, necessitatibus libero, veritatis doloremque veniam ratione labore odio, deserunt sunt repellendus explicabo ducimus.</p>
+                                <img src="https://demo.themeies.com/leospa/images/client-1.png" alt="" class="rounded-circle">
+                                <p class="my-2"><b>Jack Marsh,</b> Executive</p>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="containe r">
+                        <div class="row justify-content-center">
+                            <div class="col-10 text-center">
+                              <img src="https://demo.themeies.com/leospa/images/quote.png" alt="" class="my-4">
+                              <p class="my-4 slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi laudantium cumque dicta quam sapiente hic ipsa molestiae, necessitatibus libero, veritatis doloremque veniam ratione labore odio, deserunt sunt repellendus explicabo ducimus.</p>
+                              <img src="https://demo.themeies.com/leospa/images/client-1.png" alt="" class="rounded-circle">
+                              <p class="my-2"><b>Jack Marsh,</b> Executive</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                  </ol>
+              </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="team-info col-12 ">
+                        <div class="row justify-content-center text-center">
+                            <div class="team-title col-12">
+                                <p>Popular Procedures</p>
+                            </div>
+                            <div class="team-desc col-lg-8">
+                                To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="teammate col-md-4 col-12">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/team/2.jpg" class="card-img-top" alt="...">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="card-body">
+                                            <p class="card-title">Joseph Austin</p>
+                                            <p class="card-text">Thai Message</p>
+                                            <div class="card-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-vimeo-v"></i>
+                                                <i class="fab fa-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="teammate col-md-4 col-12">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/team/1.jpg" class="card-img-top" alt="...">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="card-body">
+                                            <p class="card-title">David Hannan</p>
+                                            <p class="card-text">Thai Message</p>
+                                            <div class="card-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-vimeo-v"></i>
+                                                <i class="fab fa-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="teammate col-md-4 col-12">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/team/3.jpg" class="card-img-top" alt="...">
+                                <div class="row text-center">
+                                    <div class="col-12">
+                                        <div class="card-body">
+                                            <p class="card-title">Cheryl Harris</p>
+                                            <p class="card-text">Thai Message</p>
+                                            <div class="card-link">
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-vimeo-v"></i>
+                                                <i class="fab fa-instagram"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <section class="user-info">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <form action="" class="contact-form" name="contactform" method="post">
+                            <div class="form-field">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" placeholder="NAME" name="name">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="email" placeholder="EMAIL ADDRESS" name="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="select-field">
+                                            <select name="service">
+                                              <option value="">SELECT SERVICE</option>
+                                              <option value="normal">Normal Service</option>
+                                              <option value="vip">VIP Serevice</option>
+                                            </select>
+                                          </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="tel" placeholder="PHONE NUMBER" name="number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-field ">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="date" placeholder="DATE" name="date" >
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="time" placeholder="TIME" name="time" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                              <textarea name="notes" placeholder="YOUR NOTES" ></textarea>
+                            </div>
+                            <div class="btn">Make an Appointment</div>
+                          </form>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="products">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="products-info col-12 ">
+                        <div class="row justify-content-center text-center">
+                            <div class="products-title col-12">
+                                <p>Latest From Blog</p>
+                            </div>
+                            <div class="products-desc col-lg-8">
+                                To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin
+                            </div>
+                        </div>  
+                    </div>
 
+                    <div class="row justify-content-between">
+                        <div class="product col-md-4 col-12">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/post/1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Massage Therapy</h5>
+                                  <p class="card-text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.
+
+                                </p>
+                                  <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product col-12 col-md-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/post/2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Executive Beauty Care</h5>
+                                  <p class="card-text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.
+
+                                </p>
+                                  <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="product col-12 col-md-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="https://demo.themeies.com/leospa/images/post/3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Executive Reflexology</h5>
+                                  <p class="card-text">Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.
+
+                                </p>
+                                  <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <section class="contact">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-md-10 m-auto">
+                  <div class="sec-heading text-center">
+                    <p class="sec-title">Get In Touch</p>
+                    <p class="sec-desc">To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-10 col-md-12 m-auto">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <address>
+                        <i class="fas fa-map-marked-alt"></i>
+                        848 E 28th ST, BROOKLYN <br>
+                        NEW YORK, USa
+                      </address>
+                      <address>
+                        <i class="fas fa-envelope"></i>
+                        <a href="">example@leospa.com</a><br>
+                        <a href="">example@leospa.com</a>
+                      </address>
+                      <address>
+                        <i class="fas fa-mobile"></i>
+                        <a href="">tel:+02 365 2365 3265 (02)</a><br>
+                        <a href="">+01 365 2365 3265 (04)</a>
+                      </address>
+                    </div>
+                    <div class="col-md-7 offset-md-1">
+                      <form action="" class="contact-form" name="contactform" method="post">
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="text" placeholder="Email Address" name="email" >
+                        <textarea placeholder="Write Comment" name="comments" id="comments"></textarea>
+                        <div class="btn">SUBMIT NOW</div>
+                      </form>
+                      <div id="message"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="footer col-12">
+                    <div class="footer-img">
+                        <img src="https://demo.themeies.com/leospa/images/logo.png" alt="">
+                    </div>
+                    <div class="footer-nav ">
+                        <ul class="d-flex justify-content-center">
+                            <li>HOME</li>
+                            <li>ABOUT</li>
+                            <li>FEATURE</li>
+                            <li>SERVICE</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="footer-link d-flex justify-content-center">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-vimeo-v"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <p class="copyright">© COPYRIGHT 2019 <a href="https://themeies.com">themeies.com.</a> ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
     <!-- bootstrap -->
     <script src="https://kit.fontawesome.com/70342427de.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
