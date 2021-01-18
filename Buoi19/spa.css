@@ -99,6 +99,7 @@ nav{
     margin-right: 10px;
     cursor: pointer;
     transition: .4s;
+    margin-left: -20px;
 }
 .play-button:hover{
     color:white;
@@ -184,9 +185,13 @@ nav{
 }
 
 /* services */
+.services{
+    overflow: hidden;
+}
 .service{
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 .service-img{
     position: relative;
@@ -214,6 +219,10 @@ nav{
 }
 .services .row{
     --bs-gutter-x: 5px;
+}
+.service .row .last{
+    --bs-gutter-x: 0px!important;
+    padding-right: 0px !important;
 }
 
 /* products */
@@ -656,5 +665,11 @@ footer{
     .teammate .card-body{
         margin-left: 0;
         margin-right: 0;
+    }
+}
+@media(min-width:1200px){
+    .banner{
+        background-size: contain;
+
     }
 }
