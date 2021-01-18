@@ -79,7 +79,6 @@ nav{
     text-decoration: none;
     transition: .4s;
     cursor: pointer;
-    margin-right: 20px;
 }
 .button:hover{
     color:black;
@@ -600,6 +599,9 @@ footer{
 
 
 @media (max-width: 576px){
+    .banner .button{
+        margin-bottom: 20px;
+    }
     .service-img img{
         width: 100%;
     }
