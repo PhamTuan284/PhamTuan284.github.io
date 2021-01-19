@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+header {
+  margin-bottom: 100px;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.container {
+  max-width: 1060px !important;
+}
+nav {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.nav-item {
+  margin-left: 95px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px;
+}
+.nav-item:hover {
+  color: #fff;
+  background-color: black;
+}
+.logo a {
+  font-size: 30px;
+  font-family: "Inconsolata";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  text-decoration: none;
+  display: inline-block;
+}
+.logo a:hover {
+  color: black;
+}
+/* post */
+.post {
+  margin-left: 80px;
+  margin-right: 50px;
+  margin-bottom: 110px;
+}
+.post-header {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.post-title {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+.post-desc {
+  margin-bottom: 90px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  text-align: left;
+}
+.post-img {
+  margin-bottom: 50px;
+}
+.post-subText {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  font-style: italic;
+  line-height: 1.714;
+  text-align: left;
+}
+.post-link {
+  font-size: 13px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.846;
+}
+.post-link i {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.post-link p {
+  cursor: pointer;
+}
+/* author */
+.sideBar-author {
+  margin-bottom: 70px;
+}
+.author-img {
+  margin-bottom: 30px;
+}
+.author-about {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 0.833;
+}
+.author-desc {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.667;
+}
+.author-link i {
+  font-size: 20px;
+  color: rgb(98, 98, 98);
+  line-height: 1.667;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* topPost */
+.topPost-header {
+  margin-bottom: 35px;
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.topPost-item {
+  margin-bottom: 25px;
+  list-style: outside;
+  color: rgb(180, 173, 158);
+}
+.topPost-item-p {
+  font-size: 16px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+}
+.comment {
+  font-size: 12px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.topPost-detail {
+  margin-bottom: 25px;
+}
+/* footer */
+footer {
+  background-color: #62626236;
+  height: 90px;
+}
+footer p {
+  margin-right: 15px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  cursor: pointer;
+}
+footer i {
+  margin-right: 15px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  .nav-icon {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    cursor: pointer;
+  }
+  .show {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: end;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding-left: 0 !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .nav-item {
+    color: #fff;
+    margin-left: 0;
+  }
+  .post {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer p {
+    font-size: 11px;
+  }
+}

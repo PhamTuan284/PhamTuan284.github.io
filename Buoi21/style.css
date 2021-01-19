@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+header {
+  margin-bottom: 100px;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.container {
+  max-width: 1060px !important;
+}
+nav {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.nav-item {
+  margin-left: 95px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 1.714;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px;
+}
+.nav-item:hover {
+  color: #fff;
+  background-color: black;
+}
+.logo a {
+  font-size: 30px;
+  font-family: "Inconsolata";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  text-decoration: none;
+  display: inline-block;
+}
+.logo a:hover {
+  color: black;
+}
+/* photodiary */
+.photodiary {
+  margin-bottom: 130px;
+}
+.photodiary-header {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.photodiary-title a {
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+  margin-bottom: 45px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.4s;
+}
+.photodiary-title a:hover {
+  color: black;
+}
+.photodiary-p {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  text-align: left;
+  margin-bottom: 60px;
+}
+.photodiary-comment {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* posts */
+.post {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 90px;
+  margin-right: 51px;
+  width: 390px !important;
+}
+.post-img {
+  margin-bottom: 30px;
+}
+.post-header {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.post-title a {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.post-title a:hover {
+  color: black;
+}
+.post-p {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  text-align: left;
+}
+
+/* signup */
+.signup {
+  background-color: #62626236;
+  margin-bottom: 100px;
+}
+.signup-title {
+  padding-top: 70px;
+  margin-bottom: 75px;
+  font-size: 30px;
+  font-family: "Playfair Display";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+}
+.signup-email {
+  margin: auto;
+  padding-bottom: 70px;
+  position: relative;
+  width: 400px;
+}
+.signup .fa-paper-plane {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.signup-email input {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+/* loadmore */
+.loadmore {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.loadmore-button {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+  background-color: transparent;
+  border: 1px solid black;
+  width: 165px;
+  padding: 20px 0;
+  cursor: pointer;
+  margin: auto;
+  transition: 0.4s;
+}
+.loadmore-button:hover {
+  background-color: black;
+  color: #fff;
+}
+/* footer */
+footer {
+  background-color: #62626236;
+  height: 90px;
+}
+footer p {
+  margin-right: 15px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  cursor: pointer;
+}
+footer i {
+  margin-right: 15px;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(0, 0, 0);
+  line-height: 1.714;
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .post {
+    margin-right: 0;
+    width: 800px !important;
+  }
+  .post img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  .nav-icon {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    cursor: pointer;
+  }
+  .show {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: end;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding-left: 0 !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .nav-item {
+    color: #fff;
+    margin-left: 0;
+  }
+  footer p {
+    font-size: 11px;
+  }
+}
