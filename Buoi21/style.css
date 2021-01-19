@@ -149,7 +149,7 @@ nav {
   margin: auto;
   padding-bottom: 70px;
   position: relative;
-  width: 400px;
+  width: 100%;
 }
 .signup .fa-paper-plane {
   position: absolute;
