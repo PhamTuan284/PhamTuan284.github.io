@@ -1,0 +1,515 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 100;
+  src: local("☺︎"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_ultralight.woff")
+      format("woff"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_ultralight.ttf")
+      format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display 100";
+  src: url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_ultralight.eot");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 200;
+  src: local("☺︎"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_thin.woff")
+      format("woff"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_thin.ttf")
+      format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display 200";
+  src: url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_thin.eot");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 300;
+  src: local("☺︎"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.woff")
+      format("woff"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.ttf")
+      format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display 300";
+  src: url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.eot");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  src: local("☺︎"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.woff")
+      format("woff"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.ttf")
+      format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display 500";
+  src: url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.eot");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: local("☺︎"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.woff")
+      format("woff"),
+    url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_semibold.ttf")
+      format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif; */
+  font-family: SF Pro Display;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CSS */
+
+/* nav */
+
+nav {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.nav-item a {
+  padding-left: 50px !important;
+  padding-right: 0 !important;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 3.57143px;
+  color: #333333 !important;
+}
+
+/* banner */
+.banner {
+  margin-bottom: 135px;
+  position: relative;
+  height: auto;
+}
+.banner img {
+  width: 100%;
+}
+.banner-slide {
+  margin-left: 100px;
+  position: absolute;
+  bottom: -80px;
+}
+.slide-arrow {
+  width: 133px;
+  background-color: #fff;
+}
+.slide-arrow i {
+  padding: 20px;
+  cursor: pointer;
+}
+.slide-text {
+  padding: 30px;
+  width: 52%;
+  background-color: #fff;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #333333;
+}
+.slide-text span {
+  font-weight: 300;
+}
+
+/* content */
+.content-wrap {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* facts */
+.facts {
+  margin-bottom: 50px;
+}
+.fact {
+  width: 310px;
+}
+.title {
+  margin-bottom: 50px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 57px;
+
+  color: #333333;
+}
+.facts-content {
+  padding: 35px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.fact-number {
+  margin-top: 30px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 86px;
+  /* identical to box height */
+
+  color: #ef5d64;
+}
+.fact-title {
+  margin-bottom: 20px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+.fact-desc {
+  margin-bottom: 70px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+.fact-seeMore {
+  text-align: right;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  cursor: pointer;
+  color: #333333;
+}
+
+/* news */
+.news {
+  margin-bottom: 90px;
+}
+.news img {
+  width: 100%;
+}
+.news .row {
+  --bs-gutter-x: 60px;
+}
+.new {
+  margin-bottom: 55px;
+}
+.new-img {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.new-title {
+  margin-bottom: 20px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+  cursor: pointer;
+}
+.new-desc {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+.new-more p {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 20px 0;
+  width: 150px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #333333;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.new-more p:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/* author */
+.author {
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 150px;
+}
+.author-comment {
+  margin-bottom: 80px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 54px;
+  /* or 180% */
+
+  letter-spacing: 0.833333px;
+
+  color: #333333;
+}
+.author-avatar img {
+  margin-right: 35px;
+}
+.author-name p {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+  color: #333333;
+}
+.author-name small {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: 2.5px;
+
+  color: #333333;
+}
+
+/* email */
+.email {
+  margin-bottom: 130px;
+}
+.email-text {
+  margin-bottom: 60px;
+}
+.email-input {
+  position: relative;
+}
+.email-input input {
+  width: 100%;
+  padding: 15px 90px;
+}
+.email-input .fa-envelope {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+.email-input .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+}
+.email .dash {
+  border-right: 1px solid black;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+
+/* footer */
+.footer-content {
+  height: 160px;
+  border-top: 1px solid black;
+}
+.footer-design {
+  margin-top: 20px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 3.21429px;
+
+  color: #333333;
+}
+.footer-nav {
+  margin-top: 20px;
+}
+.footer-nav li {
+  margin-left: 30px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 3.21429px;
+
+  color: #333333;
+  cursor: pointer;
+}
+@media (min-width: 1080px) {
+  .container {
+    max-width: 980px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer-nav li,
+  .footer-design {
+    font-size: 12px;
+  }
+  .banner-slide {
+    margin-left: 0;
+    position: relative;
+    top: -50px;
+  }
+  .slide-text {
+    font-size: 20px;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .slide-arrow {
+    margin: auto;
+  }
+  .banner {
+    margin-bottom: 80px;
+  }
+  .email-input input {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .fact-number {
+    font-size: 50px;
+  }
+  .fact-title,
+  .fact-desc,
+  .fact-seeMore,
+  .new-title,
+  .new-desc {
+    font-size: 18px;
+  }
+  .facts-content{
+      padding-left: 0;
+      padding-right: 0;
+  }
+  .author {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .author-comment {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .author-avatar img {
+    width: 60px;
+  }
+  .author-name p {
+    font-size: 15px;
+  }
+  .author-name small {
+    font-size: 12px;
+  }
+}
+@media (max-width: 993px) {
+  .slide-text {
+    font-size: 20px;
+  }
+  .navbar {
+    position: relative;
+  }
+  .navbar-nav {
+    text-align: right;
+    position: absolute;
+    z-index: 10000;
+    top: 45px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+  }
+  .nav-item {
+    padding: 5px 0;
+  }
+  .nav-link{
+    font-size: 15px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-right: 10px !important;
+}
+}
