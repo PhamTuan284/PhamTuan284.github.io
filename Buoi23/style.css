@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  object-fit: cover;
+}
+
+/* CSS */
+header {
+  position: relative;
+  height: auto;
+}
+.background-header1 {
+    max-width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+nav {
+  padding-top: 50px !important;
+  margin-bottom: 135px;
+}
+.nav-link {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 40px;
+}
+.login {
+  color: #fff !important;
+  transition: 0.4s;
+}
+.login:hover {
+  color: black;
+}
+.get-started {
+  background-color: #fff;
+  color: black !important;
+  border-radius: 5px;
+  padding: 25px 0;
+  text-align: center;
+  width: 150px;
+  transition: 0.4s;
+}
+.get-started:hover {
+  color: white !important;
+  background-color: black;
+}
+/* banner */
+/* .banner .row {
+  --bs-gutter-x: 320px !important;
+} */
+.banner-title {
+  margin-bottom: 35px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 66px;
+  color: #171c34;
+}
+.banner-desc {
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #919aa3;
+}
+p.button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 200px !important;
+  text-align: center;
+  padding: 15px 0;
+}
+.banner-right img {
+  width: 100%;
+}
+.not-active {
+  color: #919aa3;
+}
+.dot {
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+/* experience */
+.experience {
+  margin-bottom: 300px;
+}
+.experience .row {
+  --bs-gutter-x: 80px !important;
+}
+.text {
+  margin-bottom: 100px;
+}
+.title {
+  font-size: 40px;
+  line-height: 66px;
+  text-align: center;
+  color: #171c34;
+}
+.desc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  text-align: center;
+
+  color: #919aa3;
+}
+.experience-item {
+  padding: 70px 0;
+}
+.experience-item-img {
+  margin-bottom: 50px;
+}
+.experience-item-title {
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #171c34;
+  margin-bottom: 30px;
+}
+.experience-item-desc {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #919aa3;
+}
+.item-center {
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(7, 42, 68, 0.1);
+  border-radius: 10px;
+}
+
+/* pricing */
+.bill {
+  margin-bottom: 70px;
+}
+.bill p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #919aa3;
+}
+.bill b {
+  color: black !important;
+}
+.bill img {
+  margin: 0 10px;
+}
+.bill-content {
+  margin-bottom: 60px;
+}
+/* revolutionary */
+.revolutionary {
+  background-image: url(images/Group\ 17.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 250px;
+}
+
+/* customer */
+.customer {
+  background-image: url(images/Rectangle\ 3.png);
+
+  margin-bottom: 300px;
+}
+.bottom {
+  background-color: linear-gradient(
+    360deg,
+    rgba(255, 255, 255, 0.0001) 0%,
+    #ebeef0 100%
+  );
+  height: auto;
+  position: relative;
+}
+.customer-text {
+  padding-top: 130px;
+}
+.customer .row {
+  /* --bs-gutter-x: 80px !important; */
+  /* padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: calc(var(--bs-gutter-x)/ 2) !important;
+  margin-left: calc(var(--bs-gutter-x)/ 2) !important; */
+}
+.single-customer {
+  padding: 40px 40px !important;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 420px !important;
+}
+.single-customer-img {
+  margin-bottom: 40px;
+}
+.single-customer-desc {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #171c34;
+}
+.single-customer-name {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #919aa3;
+}
+
+/* pricing */
+.pricing {
+  margin-bottom: 300px;
+}
+.bottom-bg1 {
+  position: absolute;
+  top: 77%;
+}
+.bottom-bg2 {
+  position: absolute;
+  top: 46%;
+  right: 0;
+  z-index: 999999999;
+}
+
+/* footer */
+footer {
+  background-image: url(images/Rectangle\ 5.png);
+}
+.active {
+  color: black !important;
+}
+.footer-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #919aa3;
+  padding: 10px 0;
+}
+.footer-text {
+  margin-top: 50px !important;
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #171c34;
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1430px;
+  }
+}
+@media (min-width: 1200px) {
+  .title {
+    font-size: 33px;
+  }
+  .single-customer{
+      width: 350px !important;
+  }
+}
