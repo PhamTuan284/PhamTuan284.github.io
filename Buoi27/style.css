@@ -1,0 +1,72 @@
+CSS 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  /* (1.6rem = 16px = mặc định) */
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Chi tiết */
+.welcome-img{
+    position: relative;
+    z-index: -1;
+}
+.welcome-btn a{
+    text-decoration: none !important;
+    color:black !important;     
+}
+
+
+.body-clock{
+  background-image: url(https://i.pinimg.com/originals/cb/c2/2c/cbc22ca5a3d7568a742262639a9f6b3f.jpg);
+}
+.clock-wrapper{
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 15%;
+}
+.clock-button{
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  margin-right: 10px;
+  transition: .4s;
+}
+.clock-button:hover{
+  background-color: black;
+  color:white;
+}
+.clock-button:focus{
+  outline: none;
+}
