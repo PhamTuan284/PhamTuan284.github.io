@@ -27,7 +27,7 @@ class Clock {
     }
 
     exchangeTime() {
-        if (this.millisecond == 10) {
+        if (this.millisecond == 100) {
             this.millisecond = 0;
             this.second++;
         }
@@ -49,7 +49,7 @@ class Clock {
             this.millisecond++;
             this.render();
             this.exchangeTime();
-        }, 100); 
+        }, 10); 
         this.btnStart.disabled = true;
         this.btnStop.disabled = false;
         this.btnReset.disabled = false;
@@ -76,7 +76,7 @@ class Clock {
         ${String(stopHour).padStart(2, "0")}
         : ${String(stopMinute).padStart(2, "0")}
         : ${String(stopSecond).padStart(2, "0")}
-        : ${String(stopMillisecond).padStart(3, "0")}
+        : ${String(stopMillisecond).padStart(2, "0")}
         `;
         this.record.appendChild(p);
     }
@@ -97,4 +97,18 @@ class Clock {
 
 }
 
-let clock = new Clock(".clock");
+// let clock = new Clock(".clock");
+// new clock =
+//     clock{
+//         this.hour = 0;
+//         this.minute = 0;
+//         this.second = 0;
+//         this.millisecond = 0;
+//         this.el = document.querySelector(selector);
+//         this.btnStart = document.getElementById("btnStart");
+//         this.btnStop = document.getElementById("btnStop");
+//         this.btnReset = document.getElementById("btnReset");
+//         this.btnRecord = document.getElementById("btnRecord");
+//         this.record = document.getElementById("record");
+//         this.render();
+// }

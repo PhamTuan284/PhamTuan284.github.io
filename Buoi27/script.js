@@ -29,7 +29,7 @@ form.addEventListener("submit", function (e) {
     } else flag = false;
 
     if (flag) {
-        location.href = "http://127.0.0.1:5500/welcome.html"
+        location.href = "welcome.html"
     }
 })
 

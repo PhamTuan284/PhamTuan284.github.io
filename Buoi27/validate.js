@@ -7,7 +7,7 @@ let user = {
 
 export function emailValidation() {
     let emailContent = email.value.trim();
-    if (emailContent.length > 6 && emailContent === JSON.parse(localStorage.getItem("userEmail"))) {
+    if (emailContent.length > 6 || emailContent === JSON.parse(localStorage.getItem("userEmail"))) {
         return true;
     } else return false;
 }
@@ -24,7 +24,7 @@ export function emailInvalid() {
 
 export function passwordValidation() {
     let passwordContent = password.value.trim();
-    if (passwordContent.length > 6 && passwordContent === JSON.parse(localStorage.getItem("userPassword"))) {
+    if (passwordContent.length > 6 || passwordContent === JSON.parse(localStorage.getItem("userPassword"))) {
         return true
     }
     else return false
