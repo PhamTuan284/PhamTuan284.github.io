@@ -9,10 +9,16 @@
   <body class="body-clock">
     <div class="clock-wrapper">
       <p class="clock"></p>
-      <button onclick="clock.start()" class="clock-button">Start</button>
-      <button onclick="clock.stop()" class="clock-button">Stop</button>
-      <button onclick="clock.reset()" class="clock-button">Reset</button>
-      <p id="push-time"></p>
+      <button onclick="clock.start()" class="clock-button"  id="btnStart">Start</button>
+
+      <button onclick="clock.stop()" class="clock-button" id="btnStop" disabled>Stop</button>
+
+      <button onclick="clock.recordfnc()" class="clock-button" id="btnRecord" disabled>Record</button>
+
+      <button onclick="clock.reset()" class="clock-button" id="btnReset" disabled>Reset</button>
+
+      <div id="record"></div>
+
       <script src="clock.js"></script>
     </div>
   </body>
