@@ -2,12 +2,12 @@ let registForm = document.getElementById("register-form");
 let registEmail = document.getElementById("registEmail");
 let registPassword = document.getElementById("registPassword");
 let reRegistPassword = document.getElementById("re-registPassword");
-let user = {
-    email: "",
-    password: ""
-};
-let storeEmail = "";
-let storePassword = "";
+// let user = {
+//     email: "",
+//     password: ""
+// };
+// let storeEmail = "";
+// let storePassword = "";
 
 function registEmailValidation() {
     if (registEmail.value.trim().length > 6) {
@@ -19,7 +19,8 @@ function registEmailValidation() {
 function registEmailValid() {
     registEmail.classList.add("is-valid");
     registEmail.classList.remove("is-invalid");
-    storeEmail = registEmail.value;
+    // storeEmail = registEmail.value;
+    localStorage.setItem("userEmail", JSON.stringify(registEmail.value));
 }
 
 function registEmailInvalid() {
@@ -37,6 +38,7 @@ function registPasswordValidation() {
 function registPasswordValid() {
     registPassword.classList.add("is-valid");
     registPassword.classList.remove("is-invalid");
+
 }
 
 function registPasswordInvalid() {
@@ -54,7 +56,8 @@ function reRegistPasswordValidation() {
 function reRegistPasswordValid() {
     reRegistPassword.classList.add("is-valid");
     reRegistPassword.classList.remove("is-invalid");
-    storePassword = reRegistPassword.value;
+    // storePassword = reRegistPassword.value;
+    localStorage.setItem("userPassword", JSON.stringify(registPassword.value));
 }
 
 function reRegistPasswordInvalid() {
@@ -89,10 +92,9 @@ registForm.addEventListener("submit", function (e) {
     }
 
     if (flag) {
-        location.href = "http://127.0.0.1:5500/welcome.html";
-        user.email = storeEmail;
-        user.password = storePassword;
-        localStorage.setItem("user", JSON.stringify(user));
+        location.href = "http://127.0.0.1:5500/index.html";
+        // user.email = storeEmail;
+        // user.password = storePassword;
     }
 
 })

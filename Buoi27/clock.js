@@ -22,7 +22,7 @@ class Clock {
         `;
     }
     exchangeTime() {
-        if (this.millisecond == 100) {
+        if (this.millisecond == 1000) {
             this.millisecond = 0;
             this.second++;
         }

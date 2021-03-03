@@ -7,10 +7,9 @@ let user = {
 
 export function emailValidation() {
     let emailContent = email.value.trim();
-    if (emailContent.length > 6) {
+    if (emailContent.length > 6 && emailContent === JSON.parse(localStorage.getItem("userEmail"))) {
         return true;
-    }
-    else return false;
+    } else return false;
 }
 
 export function emailValid() {
@@ -25,7 +24,7 @@ export function emailInvalid() {
 
 export function passwordValidation() {
     let passwordContent = password.value.trim();
-    if (passwordContent.length > 6) {
+    if (passwordContent.length > 6 && passwordContent === JSON.parse(localStorage.getItem("userPassword"))) {
         return true
     }
     else return false
@@ -42,13 +41,13 @@ export function passwordInvalid() {
 }
 
 export function emailCheck() {
-    if (email.value.trim() === user.email) {
+    if (email.value.trim() === user.email || email.value.trim() === JSON.parse(localStorage.getItem("userEmail"))) {
         return true
     } else return false
 }
 
 export function passwordCheck() {
-    if (password.value.trim() === user.password) {
+    if (password.value.trim() === user.password || password.value.trim() === JSON.parse(localStorage.getItem("userPassword"))) {
         return true
     } else return false
 }
