@@ -63,10 +63,10 @@ img {
   margin-right: 10px;
   transition: .4s;
 }
-.clock-button:hover{
+/* .clock-button:hover{
   background-color: black;
   color:white;
-}
+} */
 .clock-button:focus{
   outline: none;
 }
