@@ -61,7 +61,7 @@ img {
   cursor: pointer;
   padding: 10px 10px;
   margin-right: 10px;
-  transition: .4s;
+  /* transition: .4s; */
 }
 /* .clock-button:hover{
   background-color: black;
