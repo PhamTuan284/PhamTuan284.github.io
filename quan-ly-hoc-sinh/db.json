@@ -1,0 +1,39 @@
+{
+  "student": [
+    {
+      "name": "Phạm Tuấn",
+      "dob": "2021-03-04",
+      "email": "asdjasjkd@gmai.com",
+      "phone": "1667710579",
+      "id": 1
+    },
+    {
+      "name": "Phạm Tuấn",
+      "dob": "2021-03-04",
+      "email": "asdjasjkd@gmai.com",
+      "phone": "1667710579",
+      "id": 2
+    },
+    {
+      "name": "Phạm Tuấn",
+      "dob": "2021-03-04",
+      "email": "asdjasjkd@gmai.com",
+      "phone": "1667710579",
+      "id": 3
+    },
+    {
+      "name": "Phạm Tuấn",
+      "dob": "2021-03-04",
+      "email": "asdjasjkd@gmai.com",
+      "phone": "1667710579",
+      "id": 4
+    },
+    {
+      "name": "Phạm Tuấn",
+      "dob": "2021-03-04",
+      "email": "asdjasjkd@gmai.com",
+      "phone": "1667710579",
+      "id": 5
+    }
+  ]
+}

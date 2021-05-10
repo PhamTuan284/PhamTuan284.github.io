@@ -1,0 +1,35 @@
+.nav-link.active {
+    font-weight: 700;
+}
+.post {
+    margin-top: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    border-radius: 10px;
+}
+.post img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.post-description h2 {
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.post-author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.page-link.current {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+.header h5 {
+ font-size: 25px;
+}
+
