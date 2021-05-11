@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px !important;
+  font-family: "Inter", sans-serif !important;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  object-fit: cover;
+}
+.btn{
+  border-radius: 0 !important;
+}
+/* Chi tiết */
+
+/* home */
+
+/* slide1 */
+.carousel-caption{
+  top: 5% !important;
+  padding-top: 5.25rem !important;
+}
+.button-slide{
+  width: 18px;
+  height: 18px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 12px;
+}
+
+.button-slide.active{
+  background-color: #FFFFFF;
+}
+
+.button-slide:focus{
+  outline: none;
+}
+
+/* slide2 */
+.secondSlide{
+  padding: 80px 0;
+  background-color: black;
+
+}
+.secondSlide .carousel-indicators{
+  position: unset;
+}
+
