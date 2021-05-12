@@ -24,3 +24,10 @@ window.onscroll = function () {
         laiThu.classList.remove("btn-outline-dark");
     }
 };
+
+var myCarousel = document.getElementById('carouselExampleCaptions')
+var secondSlideContent = document.getElementById('secondSlide-content')
+myCarousel.addEventListener('slide.bs.carousel', function (ev) {
+    // console.log(ev.relatedTarget);
+    secondSlideContent.innerHTML = ev.relatedTarget.querySelector(".carousel-caption").outerHTML;
+})
