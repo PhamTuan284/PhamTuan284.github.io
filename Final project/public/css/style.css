@@ -19,8 +19,7 @@ ol {
   padding: 0;
 }
 a {
-  color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 img {
   max-width: 100%;
@@ -35,12 +34,55 @@ img {
 
 /* home */
 
-/* slide1 */
-.carousel-caption {
-  top: 5% !important;
-  padding-top: 5.25rem !important;
+/* navbar */
+.navbar {
+  position: relative;
 }
-.button-slide {
+.navbar-extended {
+  position: absolute;
+  right: 0;
+  top: -200px;
+  width: 288px;
+  background-color: black;
+  margin-top: 61px;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar-entended-contents {
+  padding: 32px 28px;
+}
+.navbar-entended-content {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 20px;
+}
+.navbar-entended-content a {
+  margin-bottom: 12px !important;
+  color: #ffffff;
+  display: inline-block;
+  transition: 0.4s;
+}
+.navbar-entended-content a:hover {
+  color: #cb2a1d;
+}
+.nav-link {
+  transition: 0.4s;
+}
+.dark-hover:hover {
+  color: black !important;
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+}
+
+/* slide1 */
+.firstSlide .carousel-caption {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+.firstSlide .button-slide {
   width: 18px;
   height: 18px;
   border: 2px solid #ffffff;
@@ -49,11 +91,11 @@ img {
   margin-right: 12px;
 }
 
-.button-slide.active {
+.firstSlide .button-slide.active {
   background-color: #ffffff;
 }
 
-.button-slide:focus {
+.firstSlide .button-slide:focus {
   outline: none;
 }
 
@@ -78,19 +120,20 @@ img {
   position: relative;
   z-index: 2;
 }
-.secondSlide .carousel-caption{
-  padding: 10px 40px !important;
-  right:0;
+.secondSlide .carousel-caption {
+  padding: 32px 40px !important;
+  right: 0;
   left: 0;
   bottom: 0;
   top: 0;
   z-index: 1;
 }
-.secondSlide .carousel-item img{
+
+.secondSlide .carousel-item img {
   position: relative;
   z-index: 2;
 }
-.secondSlide .carousel-caption h1{
+.secondSlide .carousel-caption h1 {
   font-size: 48px !important;
 }
 /* paper */
@@ -169,35 +212,220 @@ img {
 .product:hover .product-text {
   opacity: 1;
   transition: 0.4s;
-
 }
 
-
 /* footer */
-footer{
+footer {
   width: 100%;
   background-color: black;
   padding: 40px 0;
 }
-.footer-logo{
+.footer-logo {
   margin-bottom: 40px;
 }
-.footer-text{
-  color:#ffffff;
+.footer-text {
+  color: #ffffff;
+  margin-bottom: 32px;
 }
-.footer-text p{
+.footer-text a {
   font-size: 14px;
+  display: inline-block;
+  color: #ffffff;
+  margin-bottom: 12px;
+  transition: 0.4s;
 }
-
-.footer-text b{
+.footer-text a:hover {
+  color: #cb2a1d !important;
+}
+.footer-text b {
   margin-bottom: 18px;
 }
-.footer-text i{
+.footer-text i {
   font-size: 16px;
 }
-.copyright{
-  color:#6E6B6C;
+.copyright {
+  color: #6e6b6c;
 }
-.social{
+.social {
   color: #ffffff;
+}
+.social i {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.social i:hover {
+  color: #cb2a1d !important;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  /* slide2 */
+  .secondSlide .carousel-caption {
+    padding: 20px 20px !important;
+  }
+  .secondSlide .carousel-caption h1 {
+    font-size: 32px !important;
+    margin-bottom: 8px !important;
+  }
+  .secondSlide .carousel-caption p {
+    font-size: 14px !important;
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+  .secondSlide .carousel-indicators .secondSlide-button.active {
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .secondSlide .carousel-indicators .secondSlide-button {
+    font-size: 12px;
+  }
+
+  /* paper */
+  .paper .paper-one-text {
+    font-size: 14px;
+  }
+  .paper .paper-one-bracket {
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* products */
+  .product-text {
+    font-size: 72px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* home */
+
+  /* navbar */
+  .navbar.navbar-expand-lg.navbar-dark.bg-transparent.fixed-top {
+    background-color: #ffffff !important;
+  }
+  .navbar-brand {
+    color: black !important;
+  }
+  .navbar-toggler i {
+    color: black;
+  }
+  .nav-link {
+    color: black !important;
+  }
+  .navbar-nav {
+    margin-top: 20px !important;
+  }
+  .laiThu {
+    color: black !important;
+    border: 1px solid black !important;
+    margin-top: -20px;
+  }
+  .navbar-line {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .nav-item-md {
+    color: black;
+    display: inline-block;
+    margin-bottom: 12px;
+    transition: 0.4s;
+  }
+  .nav-item-md:hover {
+    color: #cb2a1d;
+  }
+
+  .dark-hover:hover {
+    color: #cb2a1d !important;
+  }
+
+  /* slide1 */
+  .firstSlide .carousel-caption h1 {
+    font-size: 34px !important;
+  }
+  .firstSlide .carousel-caption p {
+    font-size: 14px !important;
+  }
+  .firstSlide .carousel-caption {
+    transform: translateY(-60%);
+  }
+
+  /* slide2 */
+  .secondSlide .carousel-caption {
+    padding: 16px 16px !important;
+  }
+  .secondSlide .carousel-caption h1 {
+    font-size: 20px !important;
+    margin-bottom: 8px !important;
+  }
+  .secondSlide .carousel-caption p {
+    font-size: 12px !important;
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+
+  /* paper */
+  .paper .paper-one-text {
+    font-size: 16px;
+  }
+  .paper .paper-one-bracket {
+    width: 26px;
+    height: 26px;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    object-fit: cover;
+  }
+  .paper .paper-one {
+    padding: 40px;
+    height: 220px;
+    margin-bottom: 40px;
+  }
+  .paper-one .paper-one-bracket {
+    position: absolute;
+    left: 30px;
+  }
+
+  /* products */
+  .product-text {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* slide2 */
+  .secondSlide-right {
+    height: 200px;
+  }
+  .secondSlide .carousel-caption h1 {
+    text-align: center;
+    margin-bottom: 12px !important;
+    font-size: 28px !important;
+  }
+  .secondSlide-content {
+    height: 200px !important;
+  }
+  .secondSlide .carousel-caption {
+    padding: 20px !important;
+  }
+
+  /* paper */
+  .paper .paper-one {
+    padding: 20px;
+  }
+
+  /* products */
+  .product-text {
+    font-size: 32px;
+  }
+  .product {
+    height: 250px;
+  }
+  .product .product-overlay {
+    height: 250px;
+  }
 }

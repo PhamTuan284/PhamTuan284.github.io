@@ -25,30 +25,77 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
             <div class="container"> 
-              <a class="navbar-brand" href="#"><img src="img/home/logo navbar.png" alt="" class="pe-2">VinFast</a>
+              <a class="navbar-brand" href="#"><img src="img/home/logo navbar.png" alt="" class="pe-2 ">VinFast</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0"> 
+                <ul class="navbar-nav m-auto mb-lg-2 mt-3 mt-lg-0"> 
                   <li class="nav-item ">
-                    <a class="nav-link active" href="#">Ô tô</a>
+                    <a class="nav-link active dark-hover " href="#">Ô tô</a>
                   </li>
                   <li class="nav-item ">
-                    <span class="nav-link active d-lg-block d-none">|</span>
+                    <span class="nav-link active d-lg-block d-none ">|</span>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Xe máy điện</a>
+                  <li class="nav-item ">
+                    <a class="nav-link active dark-hover" href="#">Xe máy điện</a>
                   </li>
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0"> 
                   <li class="nav-item">
                     <div class="btn btn-outline-light me-2 laiThu">Đăng ký lái thử</div>
                   </li>
-                  <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link active" href="#"><i class="fas fa-bars"></i></a>
+                  <li class="nav-item d-none d-lg-block nav-dropdown">
+                    <a class="nav-link active dark-hover" href="#"><i class="fas fa-bars"></i></a>
+                  </li>
+
+                  <div class="navbar-line d-lg-none d-block"></div>
+
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="" class="nav-item-md">Ưu đãi</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="" class="nav-item-md">Dịch vụ</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="" class="nav-item-md">Hệ thống showroom và đại lý</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="" class="nav-item-md">Đối tác trạm sạc</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="" class="nav-item-md">Câu hỏi thường gặp</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="" class="nav-item-md">Liên hệ</a>
                   </li>
                 </ul>
+              </div>
+            </div>
+            <div class="navbar-extended ">
+              <div class="navbar-entended-contents">
+                <div class="navbar-entended-content">
+                  <a href="">Ưu đãi</a>
+                </div>
+                <div class="navbar-entended-content">
+                  <a href="">Dịch vụ</a>
+                </div>
+                <div class="navbar-entended-content">
+                  <a href="">Hệ thống showroom và đại lý</a>
+                </div>
+                <div class="navbar-entended-content">
+                  <a href="">Đối tác trạm sạc</a>
+                </div>
+                <div class="navbar-entended-content">
+                  <a href="">Tin tức</a>
+                </div>
+                <div class="navbar-entended-content">
+                  <a href="">Câu hỏi thường gặp</a>
+                </div>
+                <div class="navbar-entended-content">
+                  <a href="">Liên hệ</a>
+                </div>
               </div>
             </div>
           </nav>
@@ -57,10 +104,10 @@
     <main>
       <section class="firstSlide">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators mb-2">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active button-slide" aria-current="true" aria-label="Slide 1"></butto>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="button-slide"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="button-slide"></button>
+          <div class="carousel-indicators mb-4">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active button-slide d-none d-lg-block" aria-current="true" aria-label="Slide 1"></butto>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="button-slide d-none d-lg-block"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class="button-slide d-none d-lg-block"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
@@ -100,45 +147,45 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="img/home/slide 2-1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-start">
-                      <h1>Chất lượng xứng tầm</h1>
+                    <div class="carousel-caption text-start">
+                      <h1 class="mb-3">Chất lượng xứng tầm</h1>
                       <p>Ứng dụng tinh hoa về hệ truyền động và khung gầm của Đức và thiết kế tinh tế từ Ý, mỗi chiếc xe VinFast đều sở hữu động cơ mạnh mẽ hiệu suất cao, cảm giác lái chân thực.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="img/home/slide 2-2.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-start">
-                      <h1>Công nghệ thông minh</h1>
+                    <div class="carousel-caption text-start">
+                      <h1 class="mb-3">Công nghệ thông minh</h1>
                       <p>Đặt khách hàng làm trọng tâm, các mẫu xe thông minh của VinFast được ứng dụng những công nghệ ưu việt hàng đầu thế giới như trí tuệ nhân tạo, máy học và học sâu cùng các tính năng tự hành cấp độ cao, mở ra không gian hưởng thụ tiện nghi, giải trí hoàn hảo cùng trải nghiệm cá nhân hóa đáng giá nhất.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="img/home/slide 2-3.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-start">
-                      <h1>Thiết kế đầy đam mê</h1>
+                    <div class="carousel-caption text-start">
+                      <h1 class="mb-3">Thiết kế đầy đam mê</h1>
                       <p>Kết hợp với nhà thiết kế xe nổi tiếng thế giới Pininfarina, VinFast mang đến chất lượng thiết kế đẳng cấp cho từng dòng xe. Theo đuổi triết lý trải nghiệm chạm sinh học, những chiếc xe VinFast sở hữu vẻ ngoài sang trọng đặc trưng cùng khoang nội thất đậm chất tương lai, được chăm chút trong từng chi tiết.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="img/home/slide 2-4.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-start">
-                      <h1>Trải nghiệm xuất sắc</h1>
+                    <div class="carousel-caption text-start">
+                      <h1 class="mb-3">Trải nghiệm xuất sắc</h1>
                       <p>Sở hữu xe VinFast chính là tận hưởng những giá trị tốt nhất của một hệ sinh thái đẳng cấp, từ mô hình O2O tích hợp thương mại điện tử và trải nghiệm tại hệ thống Đại lý/Showroom/trạm sạc rộng khắp, tới chất lượng dịch vụ hậu mãi vượt trội và sự tân tâm trong từng khoảnh khắc của khách hàng.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="img/home/slide 2-5.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block text-start">
-                      <h1>Chính sách thấu hiểu</h1>
-                      <p>Mong muốn mọi người được sở hữu những chiếc xe tốt nhất, VinFast luôn sáng tạo với chính sách sách bán hàng và hậu mãi có lợi nhất cho khách hàng. VinFast cũng tiên phong thúc đẩy xu hưởng sử dụng xe điện, hướng tới một tương lai xanh, bền vững hơn bằng chính sách pin độc đáo và chế độ bảo hành 10 năm duy nhất trên thị trường cho ô tô điện</p>
+                    <div class="carousel-caption text-start">
+                      <h1 class="mb-3">Chính sách thấu hiểu</h1>
+                      <p>VinFast luôn sáng tạo với chính sách sách bán hàng và hậu mãi có lợi nhất cho khách hàng. VinFast cũng tiên phong thúc đẩy xu hưởng sử dụng xe điện, hướng tới một tương lai xanh, bền vững hơn bằng chính sách pin độc đáo và chế độ bảo hành 10 năm duy nhất trên thị trường cho ô tô điện</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4 secondSlide-right ">
                 <div id="secondSlide-content">
-                  <div class="carousel-caption d-none d-md-block text-start">
-                    <h1>Chất lượng xứng tầm</h1>
+                  <div class="carousel-caption text-start">
+                    <h1 class="mb-3">Chất lượng xứng tầm</h1>
                     <p>Ứng dụng tinh hoa về hệ truyền động và khung gầm của Đức và thiết kế tinh tế từ Ý, mỗi chiếc xe VinFast đều sở hữu động cơ mạnh mẽ hiệu suất cao, cảm giác lái chân thực.</p>
                   </div>
                 </div>
@@ -161,7 +208,7 @@
           <div class="row gx-3">
             <div class="col-lg-4">
               <div class="paper-one text-center">
-                <img src="img/home/cnbc.png" alt="" class ="paper-one-logo">
+                <img src="img/home/cnbc.png" alt="" class ="paper-one-logo ">
                 <p class="paper-one-text"><img src="img/home/bracket.png" alt="" class="paper-one-bracket me-2">Chìa khóa để đạt thành công ngay từ khâu sản xuất của VinFast chính là các đối tác mạnh mẽ như ABB, Bosch, Magna Steyr và Siemens</p>
               </div>
             </div>
@@ -203,56 +250,56 @@
           <div class="col-lg-12 footer-logo text-center">
             <img src="img/home/logo footer.png" alt="">
           </div>
-          <div class="col-lg-2 d-flex flex-column footer-text ">
+          <div class="col-6 col-md-4 col-lg-2 d-flex flex-column footer-text ">
             <b>Về VinFast</b>
-            <p>Giới thiệu về VinFast</p>
-            <p>Tin tức</p>
-            <p>Ưu đãi</p>
+            <a href="">Giới thiệu về VinFast</a>
+            <a href="">Tin tức</a>
+            <a href="">Ưu đãi</a>
           </div>
-          <div class="col-lg-2 d-flex flex-column footer-text ">
+          <div class="col-6 col-md-4 col-lg-2 d-flex flex-column footer-text ">
             <b>Xe ô tô</b>
-            <p>VF e34</p>
-            <p>President</p>
-            <p>Lux SA2.0</p>
-            <p>Lux A2.0</p>
-            <p>Fadil</p>
+            <a href="">VF e34</a>
+            <a href="">President</a>
+            <a href="">Lux SA2.0</a>
+            <a href="">Lux A2.0</a>
+            <a href="">Fadil</a>
           </div>
-          <div class="col-lg-2 d-flex flex-column footer-text ">
+          <div class="col-6 col-md-4 col-lg-2 d-flex flex-column footer-text ">
             <b>Xe máy điện</b>
-            <p>Theon</p>
-            <p>Klara S</p>
-            <p>Feliz</p>
-            <p>Impes</p>
-            <p>Ludo</p>
+            <a href="">Theon</a>
+            <a href="">Klara S</a>
+            <a href="">Feliz</a>
+            <a href="">Impes</a>
+            <a href="">Ludo</a>
           </div>
-          <div class="col-lg-2 d-flex flex-column footer-text ">
+          <div class="col-6 col-md-4 col-lg-2 d-flex flex-column footer-text ">
             <b>Hỗ trợ</b>
-            <p>Câu hỏi thường gặp</p>
-            <p>Hệ thống phân phối</p>
-            <p>Đặt lịch bảo dưỡng</p>
-            <p>Liên hệ</p>
+            <a href="">Câu hỏi thường gặp</a>
+            <a href="">Hệ thống phân phối</a>
+            <a href="">Đặt lịch bảo dưỡng</a>
+            <a href="">Liên hệ</a>
           </div>
-          <div class="col-lg-2 d-flex flex-column footer-text ">
+          <div class="col-6 col-md-4 col-lg-2 d-flex flex-column footer-text ">
             <b>Pháp lý</b>
-            <p>Quy chế hoạt động sàn TMĐT</p>
-            <p>Chính sách quyền riêng tư</p>
-            <p>Các điều kiện, điều khoản</p>
-            <p>Điều kiện sử dụng cookies</p>
-            <p>Miễn trừ trách nhiệm</p>
-            <p>Chính sách bảo mật thanh toán</p>
-            <p>Chính sách đổi trả</p>
-            <p>Chính sách vận chuyển</p>
+            <a href="">Quy chế hoạt động sàn TMĐT</a>
+            <a href="">Chính sách quyền riêng tư</a>
+            <a href="">Các điều kiện, điều khoản</a>
+            <a href="">Điều kiện sử dụng cookies</a>
+            <a href="">Miễn trừ trách nhiệm</a>
+            <a href="">Chính sách bảo mật thanh toán</a>
+            <a href="">Chính sách đổi trả</a>
+            <a href="">Chính sách vận chuyển</a>
           </div>
-          <div class="col-lg-2 d-flex flex-column footer-text ">
+          <div class="col-6 col-md-4 col-lg-2 d-flex flex-column footer-text ">
             <b>Liên hệ</b>
             <p><i class="fas fa-phone me-3"></i>1900-232389</p>
             <p><i class="fas fa-envelope me-3"></i>cskh@vinfast.vn</p>
           </div>
 
-          <div class="col-lg-6 copyright mt-2">
+          <div class="col-lg-6 copyright mt-4">
             <p>VinFast. All rights reserved. © Copyright 2020</p>
           </div>
-          <div class="col-lg-6 social text-end mt-2">
+          <div class="col-lg-6 social text-lg-end mt-4">
             <span class="me-3">Kết nối với VinFast</span>
             <i class="fab fa-youtube me-3"></i>
             <i class="fab fa-facebook"></i>
