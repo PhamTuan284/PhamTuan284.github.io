@@ -1,7 +1,8 @@
-var navBar = document.querySelector('.navbar-scroll');
-var laiThu = document.querySelector('.laiThu');
-var navDropdown = document.querySelector(".nav-dropdown");
-var navbarExtended = document.querySelector(".navbar-extended")
+// home
+let navBar = document.querySelector('.navbar-scroll');
+let laiThu = document.querySelector('.laiThu');
+let navDropdown = document.querySelector(".nav-dropdown");
+let navbarExtended = document.querySelector(".navbar-extended");
 
 window.onscroll =  () => { 
     if (document.body.scrollTop >= 61 || document.documentElement.scrollTop >= 61) {
@@ -31,9 +32,10 @@ navDropdown.onclick = (ev) => {
     navbarExtended.classList.toggle("visible");
 }
 
-var myCarousel = document.getElementById('carouselExampleCaptions')
-var secondSlideContent = document.getElementById('secondSlide-content')
+let myCarousel = document.getElementById('carouselExampleCaptions')
+let secondSlideContent = document.getElementById('secondSlide-content')
 myCarousel.addEventListener('slide.bs.carousel', function (ev) {
     // console.log(ev.relatedTarget);
     secondSlideContent.innerHTML = ev.relatedTarget.querySelector(".carousel-caption").outerHTML;
 })
+
