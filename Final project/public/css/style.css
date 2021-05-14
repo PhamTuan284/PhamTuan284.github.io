@@ -41,13 +41,14 @@ img {
 .navbar-extended {
   position: absolute;
   right: 0;
-  top: -200px;
+  top: -50px;
   width: 288px;
   background-color: black;
   margin-top: 61px;
   transition: 0.4s;
   opacity: 0;
   visibility: hidden;
+  z-index: 100;
 }
 .navbar-entended-contents {
   padding: 32px 28px;
@@ -76,7 +77,9 @@ img {
   visibility: visible;
   top: 0px;
 }
-
+.nav-dropdown{
+  position: relative;
+}
 /* slide1 */
 .firstSlide .carousel-caption {
   top: 50% !important;
@@ -257,7 +260,33 @@ footer {
   color: #cb2a1d !important;
 }
 
-
+/* car */
+.car-name{
+  border: 1px solid #cb2a1d;
+  width: 100%;
+  padding: 10.5px ;
+  transition: .4s;
+  cursor: pointer;
+}
+.car-name-active{
+  background-color: #cb2a1d;
+  color: #ffffff;
+}
+.car-info b{
+  margin-bottom: 8px;
+}
+.car-info-slash{
+  height: 70%;
+  border-right: 1px solid black;
+}
+.car-info-btn{
+  width: 240px;
+  padding: 10px 0 !important;
+}
+.car .carousel-control-next, .car .carousel-control-prev{
+  width: inherit;
+  justify-content: start;
+}
 
 @media screen and (max-width: 1200px) {
   /* slide2 */

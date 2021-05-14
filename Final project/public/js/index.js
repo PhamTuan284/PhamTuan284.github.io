@@ -1,4 +1,4 @@
-var navBar = document.querySelector('.navbar');
+var navBar = document.querySelector('.navbar-scroll');
 var laiThu = document.querySelector('.laiThu');
 var navDropdown = document.querySelector(".nav-dropdown");
 var navbarExtended = document.querySelector(".navbar-extended")
