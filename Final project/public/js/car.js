@@ -19,6 +19,7 @@ president.addEventListener("click", (ev) => {
     }
     president.classList.add('car-name-active');
     carDetail.innerHTML = `
+    <h1 class="car-name-slide">President</h1>
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -61,9 +62,10 @@ president.addEventListener("click", (ev) => {
                 <b>Dài x Rộng x Cao</b>
                 <span>5146 x 1987 x 1760 (mm)</span>
             </div>
-            <div class="car-info-slash"></div>
-            <a href="president.html"><div class="btn btn-outline-dark car-info-btn">Xem chi tiết</div></a>
+            <div class="car-info-slash d-none d-md-block"></div>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -74,6 +76,7 @@ luxsa.addEventListener("click", (ev) => {
     }
     luxsa.classList.add('car-name-active');
     carDetail.innerHTML = `
+    <h1 class="car-name-slide">LUX SA 2.0</h1>
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -116,9 +119,10 @@ luxsa.addEventListener("click", (ev) => {
                 <b>Dài x Rộng x Cao</b>
                 <span>4940 x 1960 x 1773 (mm)</span>
             </div>
-            <div class="car-info-slash"></div>
-            <a href="luxsa.html"><div class="btn btn-outline-dark car-info-btn">Xem chi tiết</div></a>
+            <div class="car-info-slash d-none d-md-block"></div>
+            <a href="luxsa.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
+        <a href="luxsa.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -129,6 +133,7 @@ luxa.addEventListener("click", (ev) => {
     }
     luxa.classList.add('car-name-active');
     carDetail.innerHTML = `
+    <h1 class="car-name-slide">LUX A 2.0</h1>
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -171,9 +176,10 @@ luxa.addEventListener("click", (ev) => {
                 <b>Dài x Rộng x Cao</b>
                 <span>4973 x 1900 x 1464 (mm)</span>
             </div>
-            <div class="car-info-slash"></div>
-            <a href="luxa.html"><div class="btn btn-outline-dark car-info-btn">Xem chi tiết</div></a>
+            <div class="car-info-slash d-none d-md-block"></div>
+            <a href="luxa.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
+        <a href="luxa.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -185,6 +191,7 @@ fadil.addEventListener("click", (ev) => {
     }
     fadil.classList.add('car-name-active');
     carDetail.innerHTML = `
+    <h1 class="car-name-slide">Fadil</h1>
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -227,9 +234,10 @@ fadil.addEventListener("click", (ev) => {
                 <b>Dài x Rộng x Cao</b>
                 <span>3676 x 1632 x 1495 (mm)</span>
             </div>
-            <div class="car-info-slash"></div>
-            <a href="fadil.html"><div class="btn btn-outline-dark car-info-btn">Xem chi tiết</div></a>
+            <div class="car-info-slash d-none d-md-block"></div>
+            <a href="fadil.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
+        <a href="fadil.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -241,21 +249,22 @@ vfe34.addEventListener("click", (ev) => {
     }
     vfe34.classList.add('car-name-active');
     carDetail.innerHTML = `
+    <h1 class="car-name-slide text-center" style="position: relative; width:100%">VF e34</h1>
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/allcar/vfe34.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-item active text-center" data-bs-interval="10000">
+                    <img src="img/allcar/vfe34.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/allcar/vfe342.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/allcar/vfe342.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/vfe343.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/allcar/vfe343.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/vfe344.jpeg" class="d-block w-100" alt="...">
+                    <img src="img/allcar/vfe344.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
                 </div>
                 </div>
                 <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -270,22 +279,23 @@ vfe34.addEventListener("click", (ev) => {
         </div>
         <div class="col-12 d-flex align-items-center mb-5 justify-content-between">
             <div class="car-info d-flex flex-column">
-                <b>Công suất tối đa</b>
+                <b>Công suất</b>
                 <span>110 kW/147 HP</span>
             </div>
             <div class="car-info-slash"></div>
             <div class="car-info d-flex flex-column">
-                <b>Mô men xoắn cực đại</b>
+                <b>Mô men xoắn</b>
                 <span>242 Nm</span>
             </div>
             <div class="car-info-slash"></div>
             <div class="car-info d-flex flex-column">
                 <b>Dài x Rộng x Cao</b>
-                <span>4.300 x 1.793 x 1.613 mm</span>
+                <span>4300 x 1793 x 1613 mm</span>
             </div>
-            <div class="car-info-slash"></div>
-            <a href="vfe34.html"><div class="btn btn-outline-dark car-info-btn">Xem chi tiết</div></a>
+            <div class="car-info-slash d-none d-md-block"></div>
+            <a href="vfe34.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
+        <a href="vfe34.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })

@@ -289,8 +289,15 @@ footer {
 }
 .car-detail{
   transition: .4s;
+  position: relative;
 }
-
+.car-name-slide{
+  font-size: 60px;
+  position: absolute;
+  left:  50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
 
 @media screen and (max-width: 1200px) {
   /* slide2 */
@@ -461,4 +468,14 @@ footer {
   .product .product-overlay {
     height: 250px;
   }
+
+  /* car */
+  .car-name{
+    font-size: 14px;
+  }
+  .car-name-slide{
+    font-size: 36px;
+    top: -5px;
+  }
+
 }
