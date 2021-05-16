@@ -477,5 +477,7 @@ footer {
     font-size: 36px;
     top: -5px;
   }
-
+  .navbar{
+    position: relative !important;
+  }
 }
