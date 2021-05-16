@@ -299,6 +299,22 @@ footer {
   z-index: 100;
 }
 
+/* car detail */
+.cardetail-banner{
+  margin-top: 65px;
+
+}
+.cardetail-banner-wrapper{
+  background-image: url(../img/president/bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cardetail-banner-infos{
+  width: 60% ;
+  margin:auto;
+}
+
 @media screen and (max-width: 1200px) {
   /* slide2 */
   .secondSlide .carousel-caption {
