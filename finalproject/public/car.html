@@ -24,19 +24,19 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container"> 
-              <a class="navbar-brand" href="index.html"><img src="img/home/logo navbar.png" alt="" class="pe-2 ">VinFast</a>
+            <div class="container "> 
+              <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="img/home/logo navbar.png" alt="" class="pe-2 ">VinFast</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
                 <!-- <span class="navbar-toggler-icon"></span> -->
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-lg-2 mt-3 mt-lg-0"> 
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mt-3 mt-lg-0 "> 
                   <li class="nav-item ">
                     <a class="nav-link active dark-hover " href="car.html">Ô tô</a>
                   </li>
                   <li class="nav-item ">
-                    <span class="nav-link active d-lg-block d-none ">|</span>
+                    <span class="nav-link active d-lg-block d-none " style ="cursor:default">|</span>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link active dark-hover" href="bike.html">Xe máy điện</a>
@@ -47,32 +47,19 @@
                     <a href="driveregist.html"><div class="btn btn-outline-dark me-2 laiThu">Đăng ký lái thử</div></a>
                   </li>
                   <li class="nav-item d-none d-lg-block nav-dropdown">
-                    <a class="nav-link active dark-hover" href="#">
+                    <div class="nav-link active dark-hover" style="cursor: pointer;"  onclick="showMenuExtend()">
                       <i class="fas fa-bars"></i>
-                    </a>
-                    <div class="navbar-extended ">
+                    </div>
+                    <div class="navbar-extended" >
+                      <div class="navbar-extended-blocker" onclick="hideMenuExtend()"></div>
                       <div class="navbar-entended-contents">
-                        <div class="navbar-entended-content">
-                          <a href="promotion.html">Ưu đãi</a>
-                        </div>
-                        <div class="navbar-entended-content">
-                          <a href="services.html">Dịch vụ</a>
-                        </div>
-                        <div class="navbar-entended-content">
-                          <a href="showroom.html">Hệ thống showroom và đại lý</a>
-                        </div>
-                        <div class="navbar-entended-content">
-                          <a href="charger.html">Đối tác trạm sạc</a>
-                        </div>
-                        <div class="navbar-entended-content">
-                          <a href="news.html">Tin tức</a>
-                        </div>
-                        <div class="navbar-entended-content">
-                          <a href="q&a.html">Câu hỏi thường gặp</a>
-                        </div>
-                        <div class="navbar-entended-content">
-                          <a href="contact.html">Liên hệ</a>
-                        </div>
+                        <a class="navbar-entended-content " href="promotion.html">Ưu đãi</a>
+                        <a class="navbar-entended-content" href="services.html">Dịch vụ</a>
+                        <a class="navbar-entended-content" href="showroom.html">Hệ thống showroom và đại lý</a>
+                        <a class="navbar-entended-content" href="charger.html">Đối tác trạm sạc</a>
+                        <a class="navbar-entended-content" href="news.html">Tin tức</a>
+                        <a class="navbar-entended-content" href="q&a.html">Câu hỏi thường gặp</a>
+                        <a class="navbar-entended-content" href="contact.html">Liên hệ</a>
                       </div>
                     </div>
                   </li>

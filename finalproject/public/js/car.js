@@ -277,7 +277,7 @@ vfe34.addEventListener("click", (ev) => {
                 </div>
             </div>
         </div>
-        <div class="col-12 d-flex align-items-center mb-5 justify-content-between">
+        <div class="col-12 d-flex align-items-center mb-5 justify-content-between" style="margin-top: -100px;">
             <div class="car-info d-flex flex-column">
                 <b>Công suất</b>
                 <span>110 kW/147 HP</span>
