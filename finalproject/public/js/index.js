@@ -1,8 +1,8 @@
 // home
 let navBar = document.querySelector('.navbar-scroll');
 let laiThu = document.querySelector('.laiThu');
-let navDropdown = document.querySelector(".nav-dropdown");
 let navbarExtended = document.querySelector(".navbar-extended");
+let navbarExtendedBlocker = document.querySelector(".navbar-extended-blocker");
 
 window.onscroll =  () => { 
     if (document.body.scrollTop >= 61 || document.documentElement.scrollTop >= 61) {
@@ -27,9 +27,11 @@ window.onscroll =  () => {
         laiThu.classList.remove("btn-outline-dark");
     }
 };
-
-navDropdown.onclick = (ev) => {
-    navbarExtended.classList.toggle("visible");
+showMenuExtend = () => {
+    navbarExtended.classList.add("visible");
+}
+hideMenuExtend = () => {
+    navbarExtended.classList.remove("visible");
 }
 
 let myCarousel = document.getElementById('carouselExampleCaptions')

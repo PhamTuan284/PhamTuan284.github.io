@@ -57,21 +57,19 @@ img {
   border-bottom: 1px solid #ffffff;
   margin-bottom: 20px;
 }
-.navbar-entended-content a {
-  margin-bottom: 12px !important;
-  color: #ffffff;
-  display: inline-block;
+a.navbar-entended-content{
+  padding-bottom: 8px;
+  color: #ffffff !important;
+  display: block;
   transition: 0.4s;
 }
-.navbar-entended-content a:hover {
-  color: #cb2a1d;
+a.navbar-entended-content:hover {
+  color: #cb2a1d !important;
 }
 .nav-link {
   transition: 0.4s;
 }
-.dark-hover:hover {
-  color: black !important;
-}
+
 .visible {
   opacity: 1;
   visibility: visible;
@@ -79,6 +77,14 @@ img {
 }
 .nav-dropdown{
   position: relative;
+}
+.navbar-extended-blocker{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
 }
 /* slide1 */
 .firstSlide .carousel-caption {
