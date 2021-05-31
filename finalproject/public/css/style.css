@@ -224,6 +224,9 @@ a.navbar-entended-content:hover {
 }
 
 /* footer */
+footer a{
+  color:#ffffff !important; 
+}
 footer {
   width: 100%;
   background-color: black;

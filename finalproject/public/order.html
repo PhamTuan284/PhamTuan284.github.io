@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ô tô | VinFast</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="https://vinfastauto.com/sites/default/files/20200125140746%21Vinfast-logo.png" type="image/x-icon" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container "> 
+              <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="img/home/logo navbar.png" alt="" class="pe-2 ">VinFast</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mt-3 mt-lg-0 "> 
+                  <li class="nav-item ">
+                    <a class="nav-link active dark-hover " href="car.html">Ô tô</a>
+                  </li>
+                  <li class="nav-item ">
+                    <span class="nav-link active d-lg-block d-none " style ="cursor:default">|</span>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active dark-hover" href="bike.html">Xe máy điện</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0"> 
+                  <li class="nav-item">
+                    <a href="driveregist.html"><div class="btn btn-outline-dark me-2 laiThu">Đăng ký lái thử</div></a>
+                  </li>
+                  <li class="nav-item d-none d-lg-block nav-dropdown">
+                    <div class="nav-link active dark-hover" style="cursor: pointer;"  onclick="showMenuExtend()">
+                      <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="navbar-extended" >
+                      <div class="navbar-extended-blocker" onclick="hideMenuExtend()"></div>
+                      <div class="navbar-entended-contents">
+                        <a class="navbar-entended-content " href="promotion.html">Ưu đãi</a>
+                        <a class="navbar-entended-content" href="services.html">Dịch vụ</a>
+                        <a class="navbar-entended-content" href="showroom.html">Hệ thống showroom và đại lý</a>
+                        <a class="navbar-entended-content" href="charger.html">Đối tác trạm sạc</a>
+                        <a class="navbar-entended-content" href="news.html">Tin tức</a>
+                        <a class="navbar-entended-content" href="q&a.html">Câu hỏi thường gặp</a>
+                        <a class="navbar-entended-content" href="contact.html">Liên hệ</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <div class="navbar-line d-lg-none d-block"></div>
+
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="promotion.html" class="nav-item-md">Ưu đãi</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="services.html" class="nav-item-md">Dịch vụ</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="showroom.html" class="nav-item-md">Hệ thống showroom và đại lý</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="charger.html" class="nav-item-md">Đối tác trạm sạc</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="q&a.html" class="nav-item-md">Câu hỏi thường gặp</a>
+                  </li>
+                  <li class="nav-item d-block d-lg-none">
+                    <a href="contact.html" class="nav-item-md">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <img src="img/detailcar/president/presidentblack.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/70342427de.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js -->
+    <script src="js/car.js"></script>
+  </body>
+</html>
+
+
