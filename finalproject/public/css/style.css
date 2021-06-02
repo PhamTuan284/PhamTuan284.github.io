@@ -776,7 +776,9 @@ select:disabled{
   background-color: #cb2a1d !important;
   border-color: #cb2a1d !important;
 }
-
+.shipping-left-desc{
+  color:#767676;
+}
 @media screen and (max-width: 992px) {
   /* home */
 
