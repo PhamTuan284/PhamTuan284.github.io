@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ô tô | VinFast</title>
+    <title>Chọn xe | VinFast</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="https://vinfastauto.com/sites/default/files/20200125140746%21Vinfast-logo.png" type="image/x-icon" />
 
@@ -92,27 +92,94 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
-                <div class="col-8">
-                    <img src="img/detailcar/president/presidentblack.png" alt="">
+                <div class="col-12 col-xl-8">
+                    <img src="img/detailcar/president/presidentred.png" alt="" class="order-img mt-xl-5">
                 </div>
-                <div class="col-4">
-                    <p class="order-header">
+                <div class="col-xl-4 col-12">
+                    <p class="order-header text-center">
                         PRESIDENT
                     </p>
                     <div class="order-versions">
-                        <p class="order-versions-header">Chọn phiên bản xe</p>
-                        <div class="order-version">
+                        <p class="order-item-header">Chọn phiên bản xe</p>
+                        <div class="order-version d-flex justify-content-between align-items-center order-version-active">
                             <p>President cao cấp</p>
                             <p>4.600.000.000</p>
                         </div>
+                        <div class="order-version d-flex justify-content-between align-items-center">
+                          <p>President tiêu chuẩn</p>
+                          <p>4.000.000.000</p>
+                      </div>
                     </div>
+                    <div class="order-colors">
+                      <p class="order-item-header">Lựa chọn ngoại thất</p>
+                      <div class="row text-center">
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-red mb-3">
+                            <i class="fas fa-check color-active"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-silver mb-3">
+                            <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-purple mb-3">
+                            <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">        
+                          <div class="cardetail-color-colorpick colorpick-white mb-3">
+                            <i class="fas fa-check" style="color:black"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-orange mb-3">
+                              <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-black mb-3">
+                              <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-blue mb-3">
+                            <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-brown mb-3">
+                            <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="cardetail-color-colorpick colorpick-gray mb-3">
+                            <i class="fas fa-check"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-interiors">
+                      <p class="order-item-header">Lựa chọn nội thất</p>
+                      <div class="row">
+                        <div class="col-4 order-interior ">
+                          <img src="img/order/president/thumb-MD03-PI21.jpeg" alt="" class="order-interior-active">
+                        </div>
+                        <div class="col-4 order-interior">
+                          <img src="img/order/president/thumb-MD03-PI23.jpeg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <a href="shippingandpayment.html" class="btn order-next">Tiếp theo</a>
                 </div>
             </div>
         </div>
     </main>
 
+    
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 
@@ -130,7 +197,7 @@
     ></script>
 
     <!-- js -->
-    <script src="js/car.js"></script>
+    <script src="js/order.js"></script>
   </body>
 </html>
 

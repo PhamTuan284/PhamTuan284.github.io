@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán | VinFast</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="https://vinfastauto.com/sites/default/files/20200125140746%21Vinfast-logo.png" type="image/x-icon" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container "> 
+              <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="img/home/logo navbar.png" alt="" class="pe-2 ">VinFast</a>
+              </div>
+            </div>
+
+          </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-9 shipping-left">
+                  <div class="shipping-left-section">
+                    <h2 class="shipping-left-title">
+                      Địa điểm giao xe
+                    </h2>
+                    <div class="shipping-location d-flex">
+                      <div class="shipping-location-info d-flex justify-content-around align-items-center me-4">
+                        <span class="shipping-location-title me-2">Tỉnh</span>
+                        <span class="must-fill me-2" style="color:red">*</span>
+                        <select class="form-select" >
+                          <option value="" disabled selected hidden class="select-placeholder">Lựa chọn Tỉnh Thành phố</option>
+                          <option value="1">Hà Nội</option>
+                          <option value="2">Tp. Hồ Chí Minh</option>
+                          <option value="3">Đà Nẵng</option>
+                        </select>
+                      </div>
+                      <div class="shipping-location-info d-flex justify-content-around align-items-center">
+                        <span class="shipping-location-title me-2">Showroom</span>
+                        <span class="must-fill me-2" style="color:red">*</span>
+                        <select class="form-select">
+                          <option value="" disabled selected hidden class="select-placeholder">Lựa chọn showroom</option>
+                          <option value="1">Showroom Vinfast Long Biên</option>
+                          <option value="2">Showroom Vinfast Hai Bà Trưng</option>
+                          <option value="3">Showroom Vinfast Cầu Giấy</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="shipping-time d-flex">
+                      <p class="me-2">Thời gian dự kiến giao xe:</p>
+                      
+                      <p>VinFast sẽ liên hệ lại thời gian giao hàng cụ thể</p>
+                    </div>
+                  </div>
+                  <div class="shipping-left-section d-flex align-items-center">
+                    <h2 class="shipping-left-title mb-0 me-5">
+                      Nhập mã giảm giá
+                    </h2>
+                    <div class="input-group shipping-voucher">
+                      <input type="text" class="form-control" placeholder="Nhập mã E-voucher">
+                      <button class="btn btn-outline-secondary" type="button">Áp dụng</button>
+                    </div>
+
+                  </div>
+                  <div class="shipping-left-section d-flex align-items-center">
+                    <h2 class="shipping-left-title mb-0 me-5">
+                      Phương thức thanh toán
+                    </h2>
+                    <div class="form-check me-4">
+                      <input checked class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Trả thẳng
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Trả góp
+                      </label>
+                    </div>
+
+                  </div>
+                  <div class="shipping-left-section">
+                    <h2 class="shipping-left-title">
+                      Chính sách ưu đãi
+                    </h2>
+                    <img src="img/order/president/chinh-sach-uu-dai-khac_1.jpeg" alt="">
+
+                  </div>
+                  <div class="shipping-left-section">
+                    <h2 class="shipping-left-title">
+                      Thông tin khách hàng
+                    </h2>
+                  </div>
+
+                  <div class="shipping-left-section">
+                    <h2 class="shipping-left-title">
+                      Thanh toán đặt cọc
+                    </h2>
+                  </div>
+                  <div class="shipping-left-section">
+                    <h2 class="shipping-left-title">
+                      Thẻ tín dụng / Ghi nợ
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-3 shipping-right">
+                    <p class="shipping-header text-center">
+                        PRESIDENT
+                    </p>
+                    <img src="img/detailcar/president/presidentred.png" alt="" class="shipping-img mb-4">
+                    <div class="row mb-4">
+                      <div class="col-4 d-flex flex-column">
+                        <h4 class="shipping-right-header">
+                          Phiên bản
+                        </h4>
+                        <p class="shipping-right-desc">
+                          Cao cấp
+                        </p>
+                      </div>
+                      <div class="col-4 d-flex flex-column">
+                        <h4 class="shipping-right-header">
+                          Màu xe
+                        </h4>
+                        <div class="shipping-right-color"></div>
+                      </div>
+                      <div class="col-4 d-flex flex-column">
+                        <h4 class="shipping-right-header">
+                          Nội thất
+                        </h4>
+                        <div class="shipping-right-interior">
+                          <img src="img/order/president/thumb-MD03-PI21.jpeg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shipping-price d-flex justify-content-between">
+                      <p class="shipping-price-desc">Giá niêm yết</p>
+                      <p class="shipping-price-price origin">4.600.000.000</p>
+                    </div>
+                    <div class="shipping-price d-flex justify-content-between">
+                      <p class="shipping-price-desc">Ưu đãi</p>
+                      <p class="shipping-price-price discount">- 800.000.000</p>
+                    </div>
+                    <div class="shipping-right-dash"></div>
+                    <div class="shipping-price d-flex justify-content-between">
+                      <p class="shipping-price-desc">Giá trị đơn hàng</p>
+                      <p class="shipping-price-price total">3.800.000.000</p>
+                    </div>
+                    <div class="row">
+                      <div class="col-2"></div>
+                      <div class="col-8">
+                        <a href="" class="btn shipping-btn">Thanh toán</a>
+                      </div>
+                      <div class="col-2"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/70342427de.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <!-- js -->
+    <script src="js/order.js"></script>
+  </body>
+</html>
+
+
