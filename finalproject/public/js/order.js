@@ -65,12 +65,12 @@ for (let i = 0; i < orderInterior.length; i++){
             orderInterior[j].firstElementChild.classList.remove("order-interior-active");
         }
         orderInterior[i].firstElementChild.classList.add("order-interior-active");
-        // if (i == 0) {
-        //     orderImg.src = "img/detailcar/president/presidentred.png";
-        // }
-        // if (i == 1) {
-        //     orderImg.src = "img/detailcar/president/presidentsilver.png";
-        // }
+        if (i == 0) {
+            orderImg.src = "img/president/inte1.png";
+        }
+        if (i == 1) {
+            orderImg.src = "img/president/inte2.png";
+        }
     })
 }
 
