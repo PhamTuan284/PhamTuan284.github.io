@@ -260,8 +260,9 @@ form.addEventListener("submit", (e) => {
 
     if (flag) {
         location.href = "ordersuccess.html";
+        form.reset();
     }
-
+    
 })
 
 province.onchange = () => {
