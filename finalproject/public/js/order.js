@@ -157,6 +157,26 @@ function checkDeal() {
     } else return false
 }
 
+
+let cardNumber = document.getElementById("exampleFormControlInput5");
+let csc = document.getElementById("exampleFormControlInput6");
+let expirationDate = document.getElementById("exampleFormControlInput7");
+function checkCardNumber(){
+    if (cardNumber.value.length < 20 ) {
+        return false
+    } else return true
+}
+function checkCsc(){
+    if (csc.value.length != 3 ) {
+        return false
+    } else return true
+}
+function checkExpirationDate(){
+    if (expirationDate.value.length < 5) {
+        return false
+    } else return true
+}
+
 let form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -223,6 +243,21 @@ form.addEventListener("submit", (e) => {
         invalidDeal.classList.remove("invalid-deal-visible")
     }
 
+    if (visa.checked == true) {
+        if (!checkCardNumber()) {
+            flag = false;
+            cardNumber.classList.add("is-invalid")
+        }
+        if (!checkCsc()) {
+            flag = false;
+            csc.classList.add("is-invalid")
+        }
+        if (!checkExpirationDate()) {
+            flag = false;
+            expirationDate.classList.add("is-invalid")
+        }
+    }
+
     if (flag) {
         location.href = "ordersuccess.html";
     }
@@ -270,5 +305,33 @@ phoneInput.onchange = () => {
         phoneInput.classList.add("is-invalid");
     }
 }
+emailInput.onchange = () => {
+    if (emailInput.value.length >= 4) {
+        emailInput.classList.remove("is-invalid")
+    } else {
+        emailInput.classList.add("is-invalid")
+    }
+}
 
+cardNumber.onchange = () => {
+    if (cardNumber.value.length >= 20) {
+        cardNumber.classList.remove("is-invalid")
+    } else {
+        cardNumber.classList.add("is-invalid")
+    }
+}
+csc.onchange = () => {
+    if (csc.value.length == 3) {
+        csc.classList.remove("is-invalid")
+    } else {
+        csc.classList.add("is-invalid")
+    }
+}
+expirationDate.onchange = () => {
+    if (expirationDate.value.length == 4) {
+        expirationDate.classList.remove("is-invalid")
+    } else {
+        expirationDate.classList.add("is-invalid")
+    }
+}
 
