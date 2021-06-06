@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
     />
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="p  reconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
@@ -26,8 +26,8 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container "> 
-              <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="img/home/logo navbar.png" alt="" class="pe-2 ">VinFast</a>
+            <div class="container-fluid "> 
+              <a class="navbar-brand d-flex align-items-center m-auto" href="index.html"><img src="img/home/logo navbar.png" alt="logo" class="pe-2 ">VinFast</a>
               </div>
             </div>
 
@@ -35,239 +35,352 @@
     </header>
 
     <main>
-        <div class="container-fluid mt-5">
-            <div class="row">
-                <div class="col-9 shipping-left">
-                  <div class="shipping-left-section">
-                    <h2 class="shipping-left-title">
-                      Địa điểm giao xe
-                    </h2>
-                    <div class="shipping-location d-flex">
-                      <div class="shipping-location-info d-flex justify-content-around align-items-center me-4">
-                        <span class="shipping-location-title me-2">Tỉnh</span>
-                        <span class="must-fill me-2" style="color:red">*</span>
-                        <select class="form-select" >
+      <form action="" id="form">
+        <div class="container-fluid mt-3">
+            <div class="row flex-row-reverse">
+              <div class="col-12 col-xl-3 shipping-right">
+                  <p class="shipping-header text-center">
+                      PRESIDENT
+                  </p>
+                  <img src="img/detailcar/president/presidentred.png" alt="car" class="shipping-img mb-4">
+                  <div class="row mb-4">
+                    <div class="col-4 col-sm-2 col-xl-4 d-flex flex-column">
+                      <h4 class="shipping-right-header">
+                        Phiên bản
+                      </h4>
+                      <p class="shipping-right-desc">
+                        Cao cấp
+                      </p>
+                    </div>
+                    <div class="col-4 col-sm-2 col-xl-4 d-flex flex-column">
+                      <h4 class="shipping-right-header">
+                        Màu xe
+                      </h4>
+                      <div class="shipping-right-color"></div>
+                    </div>
+                    <div class="col-4 col-sm-2 col-xl-4 d-flex flex-column">
+                      <h4 class="shipping-right-header">
+                        Nội thất
+                      </h4>
+                      <div class="shipping-right-interior">
+                        <img src="img/order/president/thumb-MD03-PI21.jpeg" alt="">
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-12 mt-4 mt-sm-0">
+                      <div class="shipping-price d-flex justify-content-between mt-xl-4">
+                        <p class="shipping-price-desc">Giá niêm yết</p>
+                        <p class="shipping-price-price origin">4.600.000.000</p>
+                      </div>
+                      <div class="shipping-price d-flex justify-content-between">
+                        <p class="shipping-price-desc">Ưu đãi</p>
+                        <p class="shipping-price-price discount">- 800.000.000</p>
+                      </div>
+                      <div class="shipping-right-dash"></div>
+                      <div class="shipping-price d-flex justify-content-between">
+                        <p class="shipping-price-desc">Giá trị đơn hàng</p>
+                        <p class="shipping-price-price total">3.800.000.000</p>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-12 d-xl-block d-none">
+                      <button href="" class="btn shipping-btn" 
+                      type="submit"
+                      >Thanh toán</button>
+                    </div>
+        
+                  </div>
+
+              </div>
+
+
+              <div class="col-12 col-xl-9 shipping-left mt-xl-0 mt-5">
+
+                <div class="shipping-left-section">
+                  <h2 class="shipping-left-title">
+                    Địa điểm giao xe
+                  </h2>
+                  <div class="shipping-location row align-items-start">
+                    <div class="shipping-location-info col-md-6 col-12">
+                      <div class="row align-items-center mb-3 mb-md-0">
+                        <span class="shipping-location-title  col-2">Tỉnh</span>
+                        <select class="form-select col-6" id="province">
                           <option value="" disabled selected hidden class="select-placeholder">Lựa chọn Tỉnh Thành phố</option>
                           <option value="1">Hà Nội</option>
                           <option value="2">Tp. Hồ Chí Minh</option>
                           <option value="3">Đà Nẵng</option>
                         </select>
+                        <div class="invalid-feedback col-6 offset-md-2 offset-3">
+                          Hãy chọn Tỉnh.
+                        </div>
                       </div>
-                      <div class="shipping-location-info d-flex justify-content-around align-items-center">
-                        <span class="shipping-location-title me-2">Showroom</span>
-                        <span class="must-fill me-2" style="color:red">*</span>
-                        <select class="form-select">
-                          <option value="" disabled selected hidden class="select-placeholder">Lựa chọn showroom</option>
+                    </div>
+                    
+                    <div class="shipping-location-info col-md-6 col-12">
+                      <div class="row align-items-center">
+                        <span class="shipping-location-title col-3 me-0 me-md-2">Showroom</span>
+                        <select class="form-select col-6" id="showroom">
+                          <option value="" disabled selected hidden class="select-placeholder" >Lựa chọn showroom</option>
                           <option value="1">Showroom Vinfast Long Biên</option>
                           <option value="2">Showroom Vinfast Hai Bà Trưng</option>
                           <option value="3">Showroom Vinfast Cầu Giấy</option>
                         </select>
-                      </div>
-                    </div>
-                    <div class="shipping-time d-flex">
-                      <p class="me-2">Thời gian dự kiến giao xe:</p>
-                      
-                      <p>VinFast sẽ liên hệ lại thời gian giao hàng cụ thể</p>
-                    </div>
-                  </div>
-                  <div class="shipping-left-section d-flex align-items-center">
-                    <h2 class="shipping-left-title mb-0 me-5">
-                      Nhập mã giảm giá
-                    </h2>
-                    <div class="input-group shipping-voucher">
-                      <input type="text" class="form-control" placeholder="Nhập mã E-voucher">
-                      <button class="btn btn-outline-secondary" type="button">Áp dụng</button>
-                    </div>
-
-                  </div>
-                  <div class="shipping-left-section d-flex align-items-center">
-                    <h2 class="shipping-left-title mb-0 me-5">
-                      Phương thức thanh toán
-                    </h2>
-                    <div class="form-check me-4">
-                      <input checked class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                      <label class="form-check-label" for="flexRadioDefault1">
-                        Trả thẳng
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                      <label class="form-check-label" for="flexRadioDefault2">
-                        Trả góp
-                      </label>
-                    </div>
-
-                  </div>
-                  <div class="shipping-left-section">
-                    <h2 class="shipping-left-title">
-                      Chính sách ưu đãi
-                    </h2>
-                    <img src="img/order/president/chinh-sach-uu-dai-khac_1.jpeg" alt="">
-
-                  </div>
-                  <div class="shipping-left-section">
-                    <h2 class="shipping-left-title mb-3">
-                      Thông tin khách hàng
-                    </h2>
-                    <p class="shipping-left-desc mb-4">
-                      Thông tin khách hàng sẽ được đưa vào thỏa thuận đặt cọc. Quý khách vui lòng nhập chính xác các nội dung dưới đây.
-                    </p>
-                    <div class="row mb-4">
-                      <div class="col-6">
-                        <div class="mb-3 d-flex align-items-center">
-                          <label for="exampleFormControlInput1" class="form-label me-5 mb-0">Họ & tên</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nhập tên" style="width: 80%;">
+                        <div class="invalid-feedback offset-3 col-6">
+                          Hãy chọn Showroom.
                         </div>
                       </div>
-                      <div class="col-6">
-                        <div class="mb-3 d-flex align-items-center">
-                          <label for="exampleFormControlInput1" class="form-label me-2 mb-0">CMND/CCCD</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nhập số CMND/CCCD">
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="mb-3 d-flex align-items-center">
-                          <label for="exampleFormControlInput1" class="form-label me-2 mb-0">Số điện thoại</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nhập số điện thoại" style="width: 70%;">
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="mb-3 d-flex align-items-center">
-                          <label for="exampleFormControlInput1" class="form-label me-2 mb-0">Email</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nhập email">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Tôi cam kết các thông tin khách hàng cung cấp tại đây hoàn toàn chính xác
-                      </label>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
-                      <label class="form-check-label" for="flexCheckDefault1">
-                        Tôi đã đọc, hiểu rõ và xác nhận đồng ý với toàn bộ nội dung <a href="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_navigation/default/dwaa30dde3/Document/VFEcom-Dieu%20khoan%20dat%20coc_Cars.pdf">Điều khoản</a>  trong <a href="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_navigation/default/dwaa30dde3/Document/VFEcom-Dieu%20khoan%20dat%20coc_Cars.pdf">Thỏa Thuận</a> Đặt Cọc trên cũng như Chính Sách Ưu Đãi áp dụng tại thời điểm đặt mua xe ô tô này trên VinFast Online.
-                      </label>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                      <label class="form-check-label" for="flexCheckDefault2">
-                        Tôi đồng ý với các <a href="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_navigation/default/dwaa30dde3/Document/VFEcom-Dieu%20khoan%20dat%20coc_Cars.pdf">Điều kiện & Điều khoản</a> của VinFast Online
-                      </label>
+ 
                     </div>
                   </div>
+                  <div class="shipping-time d-md-flex ">
+                    <b class="me-2">Thời gian dự kiến giao xe:</b>
+                    
+                    <p>VinFast sẽ liên hệ lại thời gian giao xe cụ thể</p>
+                  </div>
+                </div>
 
-                  <div class="shipping-left-section ">
-                    <h2 class="shipping-left-title">
-                      Thanh toán đặt cọc
-                    </h2>
-                    <div class="radio-wrapper d-flex justify-content-between">
-                      <div class="form-check me-2">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                        <label class="form-check-label" for="flexRadioDefault3">
-                          Thanh toán qua thẻ tín dụng
+
+                <!-- <div class="shipping-left-section d-md-flex align-items-center">
+                  <h2 class="shipping-left-title mb-3 mb-sm-0 me-5">
+                    Nhập mã giảm giá
+                  </h2>
+                  <div class="input-group shipping-voucher">
+                    <input type="text" class="form-control" placeholder="Nhập mã E-voucher">
+                    <button class="btn btn-outline-secondary" type="button">Áp dụng</button>
+                  </div>
+
+                </div> -->
+
+
+                <div class="shipping-left-section d-md-flex align-items-center">
+                  <h2 class="shipping-left-title mb-3 mb-sm-0 me-5">
+                    Phương thức thanh toán
+                  </h2>
+                  <div class="form-check me-4">
+                    <input checked class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Trả thẳng
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Trả góp
+                    </label>
+                  </div>
+
+                </div>
+
+
+                <div class="shipping-left-section">
+                  <h2 class="shipping-left-title">
+                    Chính sách ưu đãi
+                  </h2>
+                  <img src="img/order/president/chinh-sach-uu-dai-khac_1.jpeg" alt="promotion">
+
+                </div>
+
+
+                <div class="shipping-left-section">
+                  <h2 class="shipping-left-title mb-3">
+                    Thông tin khách hàng
+                  </h2>
+                  <p class="shipping-left-desc mb-4">
+                    Thông tin khách hàng sẽ được đưa vào thỏa thuận đặt cọc. Quý khách vui lòng nhập chính xác các nội dung dưới đây.
+                  </p>
+                  <div class="row mb-4">
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3 row align-items-center">
+                        <label for="name" class="form-label mb-0 col-3 customer-info-label" >
+                          Họ & tên
                         </label>
+                        <input class="form-control col-6 customer-info-input" id="name" placeholder="Nhập tên">
+                        <div class="invalid-feedback col-6 offset-3 invalid-name">
+                          Hãy điền tên.
+                        </div>
                       </div>
-                      <div class="form-check me-2">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                        <label class="form-check-label" for="flexRadioDefault4">
-                          Thẻ ATM nội địa / Internet Banking (miễn phí thanh toán)
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3 row align-items-center">
+                        <label for="cmnd" class="form-label mb-0 customer-info-label col-3">
+                          CMND/CCCD
                         </label>
+                        <input class="form-control customer-info-input col-6" id="cmnd" placeholder="Nhập số CMND/CCCD">
+                        <div class="invalid-feedback col-6 offset-3 invalid-cmnd">
+                          Hãy điền CMND/CCCD.
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                        <label class="form-check-label" for="flexRadioDefault5">
-                          Thanh toán qua chuyển khoản ngân hàng
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3 row align-items-center">
+                        <label for="phone" class="form-label mb-0 customer-info-label col-3">
+                          Số điện thoại
                         </label>
+                        <input class="form-control customer-info-input col-6" id="phone" placeholder="Nhập số điện thoại">
+                        <div class="invalid-feedback col-6 offset-3 invalid-phone">
+                          Hãy điền số điện thoại.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="mb-3 row align-items-center">
+                        <label for="email" class="form-label mb-0 customer-info-label col-3">
+                          Email
+                        </label>
+                        <input class="form-control customer-info-input col-6" id="email" placeholder="Nhập email" type="email">
+                        <div class="invalid-feedback col-6 offset-3">
+                          Hãy điền email.
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="shipping-left-section">
-                    <div class="shipping-title-wrapper d-flex align-items-center mb-5">
-                      <h2 class="shipping-left-title me-4 mb-0">
-                        Thẻ tín dụng / Ghi nợ
-                      </h2>
-                      <img src="img/visa.png" alt="" style="width: 50px; height: 33px;" class="me-2">
-                      <img src="img/mastercard.png" alt="" style="width: 50px; height: 33px;">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="deal1">
+                    <label class="form-check-label" for="deal1">
+                      Tôi cam kết các thông tin khách hàng cung cấp tại đây hoàn toàn chính xác
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="deal2">
+                    <label class="form-check-label" for="deal2">
+                      Tôi đã đọc, hiểu rõ và xác nhận đồng ý với toàn bộ nội dung <a href="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_navigation/default/dwaa30dde3/Document/VFEcom-Dieu%20khoan%20dat%20coc_Cars.pdf">Điều khoản</a>  trong <a href="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_navigation/default/dwaa30dde3/Document/VFEcom-Dieu%20khoan%20dat%20coc_Cars.pdf">Thỏa Thuận</a> Đặt Cọc trên cũng như Chính Sách Ưu Đãi áp dụng tại thời điểm đặt mua xe ô tô này trên VinFast Online.
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="deal3">
+                    <label class="form-check-label" for="deal3">
+                      Tôi đồng ý với các <a href="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_navigation/default/dwaa30dde3/Document/VFEcom-Dieu%20khoan%20dat%20coc_Cars.pdf">Điều kiện & Điều khoản</a> của VinFast Online
+                    </label>
+                  </div>
+                  <p class="invalid-deal" style="color:red">Chưa cam kết với các điều khoản</p>
+                </div>
+
+                <div class="shipping-left-section ">
+                  <h2 class="shipping-left-title mb-2">
+                    Thanh toán đặt cọc
+                  </h2>
+                  <p class="shipping-left-desc mb-4">
+                    Để hoàn thành đơn đặt hàng. Quý khách vui lòng thanh toán <b>100.000.000đ</b> cho VinFast bằng cách lựa chọn một trong các phương thức thanh toán sau:
+                  </p>
+                  <div class="radio-wrapper d-sm-flex ">
+                    <div class="form-check me-5">
+                      <input class="form-check-input" type="radio" name="payment" id="visa" checked>
+                      <label class="form-check-label" for="visa">
+                        Thanh toán qua thẻ tín dụng
+                      </label>
                     </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="mb-4 d-flex align-items-center">
-                          <label for="exampleFormControlInput1" class="form-label me-2 mb-0">Số thẻ</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1234 5678 9101 1234" style="width: 92%;">
+                    <div class="form-check me-2">
+                      <input class="form-check-input" type="radio" name="payment" id="atm">
+                      <label class="form-check-label" for="atm">
+                        Thẻ ATM nội địa / Internet Banking (miễn phí thanh toán)
+                      </label>
+                    </div>
+                  </div>
+                  <div class="shipping-left-pay mt-3">
+                    <hr>
+                    <h4 class="mb-4">Thông tin chuyển khoản đặt cọc
+                    </h4>
+                    <div class="shipping-left-pay-info d-flex mb-3">
+                      <b>Ngân hàng </b>
+                      <span>Ngân hàng Thương mại cổ phần Kỹ Thương Việt Nam (Techcombank)
+                      </span>
+                    </div>
+                    <div class="shipping-left-pay-info d-flex mb-3">
+                      <b>Số tài khoản </b>
+                      <span>19035192838125</span>
+                    </div>
+                    <div class="shipping-left-pay-info d-flex mb-3">
+                      <b>Tên tài khoản </b>
+                      <span>CÔNG TY TNHH KINH DOANH THƯƠNG MẠI VÀ DỊCH VỤ VINFAST</span>
+                    </div>
+                    <div class="shipping-left-pay-info d-flex mb-3">
+                      <b>Nội dung </b>
+                      <span>CMT ___ nop coc xe PRESIDENT</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="shipping-left-section payment-visa ">
+                  <div class="shipping-title-wrapper d-flex align-items-center mb-5">
+                    <h2 class="shipping-left-title me-4 mb-0">
+                      Thẻ tín dụng / Ghi nợ
+                    </h2>
+                    <img src="img/visa.png" alt="visa" style="width: 50px; height: 33px;" class="me-2">
+                    <img src="img/mastercard.png" alt="mastercard" style="width: 50px; height: 33px;">
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-4 row align-items-center shipping-payment">
+                        <label for="exampleFormControlInput5" class="form-label mb-0 payment-title col-3" style="width: 100px;">Số thẻ</label>
+                        <input  class="form-control col-8" id="exampleFormControlInput5" placeholder="1234 5678 9101 1234" style="width: 83%;">
+                        <div class="invalid-feedback col-6 offset-3 offset-sm-1 ps-4">
+                          Hãy điền số thẻ.
                         </div>
                       </div>
-                      <div class="col-4">
-                        <div class="mb-3 d-flex align-items-center">
-                          <label for="exampleFormControlInput2" class="form-label me-4 mb-0">CSC</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="123">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <div class="mb-3 row align-items-center shipping-payment">
+                        <label for="exampleFormControlInput6" class="form-label mb-0 payment-title col-3" style="width: 100px;">CSC</label>
+                        <input class="form-control col-6 " id="exampleFormControlInput6" placeholder="123" style="width: 60%;">
+                        <div class="invalid-feedback col-6 offset-3 offset-sm-2 ps-4">
+                          Hãy điền CSC.
                         </div>
                       </div>
-                      <div class="col-8">
-                        <div class="mb-3 d-flex align-items-center">
-                          <label for="exampleFormControlInput3" class="form-label me-2 mb-0">Ngày hết hạn</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="12/25" style="width: 80%;">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <div class="mb-3 row align-items-center shipping-payment">
+                        <label for="exampleFormControlInput7" class="form-label mb-0 payment-title col-3" style="width: 130px;">Ngày hết hạn</label>
+                        <input class="form-control col-6 " id="exampleFormControlInput7" placeholder="12/25"
+                        style="width: 60%;">
+                        <div class="invalid-feedback col-6 offset-3 ps-sm-0 ps-4">
+                          Hãy điền ngày hết hạn.
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-3 shipping-right">
-                    <p class="shipping-header text-center">
-                        PRESIDENT
-                    </p>
-                    <img src="img/detailcar/president/presidentred.png" alt="" class="shipping-img mb-4">
-                    <div class="row mb-4">
-                      <div class="col-4 d-flex flex-column">
-                        <h4 class="shipping-right-header">
-                          Phiên bản
-                        </h4>
-                        <p class="shipping-right-desc">
-                          Cao cấp
-                        </p>
-                      </div>
-                      <div class="col-4 d-flex flex-column">
-                        <h4 class="shipping-right-header">
-                          Màu xe
-                        </h4>
-                        <div class="shipping-right-color"></div>
-                      </div>
-                      <div class="col-4 d-flex flex-column">
-                        <h4 class="shipping-right-header">
-                          Nội thất
-                        </h4>
-                        <div class="shipping-right-interior">
-                          <img src="img/order/president/thumb-MD03-PI21.jpeg" alt="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="shipping-price d-flex justify-content-between">
-                      <p class="shipping-price-desc">Giá niêm yết</p>
-                      <p class="shipping-price-price origin">4.600.000.000</p>
-                    </div>
-                    <div class="shipping-price d-flex justify-content-between">
-                      <p class="shipping-price-desc">Ưu đãi</p>
-                      <p class="shipping-price-price discount">- 800.000.000</p>
-                    </div>
-                    <div class="shipping-right-dash"></div>
-                    <div class="shipping-price d-flex justify-content-between">
-                      <p class="shipping-price-desc">Giá trị đơn hàng</p>
-                      <p class="shipping-price-price total">3.800.000.000</p>
-                    </div>
-                    <div class="row">
-                      <div class="col-2"></div>
-                      <div class="col-8">
-                        <a href="" class="btn shipping-btn">Thanh toán</a>
-                      </div>
-                      <div class="col-2"></div>
+              </div>
 
-                    </div>
-                </div>
+
+              <div class="col-6 d-xl-none d-block mb-5 m-auto">
+                <button class="btn shipping-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" >Thanh toán</button>
+              </div>
 
             </div>
         </div>
+      </form>
     </main>
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="ordersuccess text-center">
+        <h2 class="ordersuccess-header">Đặt thành công</h2>
+        <h4 class="ordersuccess-car">PRESIDENT</h4>
+        <img src="img/ordersuccess/color1.png" alt="car" class="ordersuccess-img mb-3">
+        <div class="ordersuccess-infos text-start">
+          <div class="ordersuccess-info ordersuccess-info-name">
+            <b>Tên người đặt: </b>Phạm Minh Tuấn
+          </div>
+          <div class="ordersuccess-info ordersuccess-info-phone">
+            <b>Số điện thoại: </b>0367710579
+          </div>
+          <div class="ordersuccess-info ordersuccess-info-showroom">
+            <b>Showroom: </b>VinFast Long Biên Tầng 1, TTTM Vincom Plaza Long Biên
+          </div>
+          <a href="index.html" class="ordersuccess-info ordersuccess-info-btn text-center">Về trang chủ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
 
     
     <!-- jquery -->

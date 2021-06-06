@@ -25,16 +25,16 @@ president.addEventListener("click", (ev) => {
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/allcar/president.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/president.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/allcar/president2.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/president2.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/president3.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/president3.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/president4.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/president4.png" class="d-block w-100" alt="car">
                 </div>
                 </div>
                 <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -82,16 +82,16 @@ luxsa.addEventListener("click", (ev) => {
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/allcar/luxsa.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxsa.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/allcar/luxsa2.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxsa2.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/luxsa3.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxsa3.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/luxsa4.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxsa4.png" class="d-block w-100" alt="car">
                 </div>
                 </div>
                 <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -139,16 +139,16 @@ luxa.addEventListener("click", (ev) => {
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/allcar/luxa.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxa.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/allcar/luxa2.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxa2.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/luxa3.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxa3.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/luxa4.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/luxa4.png" class="d-block w-100" alt="car">
                 </div>
                 </div>
                 <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -197,16 +197,16 @@ fadil.addEventListener("click", (ev) => {
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/allcar/fadil.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/fadil.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/allcar/fadil2.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/fadil2.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/fadil3.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/fadil3.png" class="d-block w-100" alt="car">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/fadil4.png" class="d-block w-100" alt="...">
+                    <img src="img/allcar/fadil4.png" class="d-block w-100" alt="car">
                 </div>
                 </div>
                 <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -253,18 +253,18 @@ vfe34.addEventListener("click", (ev) => {
     <div class="row">
         <div class="col-12">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner carousel-inner-vfe34">
                 <div class="carousel-item active text-center" data-bs-interval="10000">
-                    <img src="img/allcar/vfe34.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
+                    <img src="img/allcar/vfe34.jpeg" class="d-block w-100 m-auto" alt="car" style="width: 80% !important;">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/allcar/vfe342.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
+                    <img src="img/allcar/vfe342.jpeg" class="d-block w-100 m-auto" alt="car" style="width: 80% !important;">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/vfe343.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
+                    <img src="img/allcar/vfe343.jpeg" class="d-block w-100 m-auto" alt="car" style="width: 80% !important;">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/allcar/vfe344.jpeg" class="d-block w-100 m-auto" alt="..." style="width: 80% !important;">
+                    <img src="img/allcar/vfe344.jpeg" class="d-block w-100 m-auto" alt="car" style="width: 80% !important;">
                 </div>
                 </div>
                 <div class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
