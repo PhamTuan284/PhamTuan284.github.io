@@ -1,4 +1,6 @@
 let navbarExtended = document.querySelector(".navbar-extended");
+let orderInterior = document.querySelectorAll(".order-interior");
+let orderImgParent = document.querySelector(".orderImgParent");
 
 showMenuExtend = () => {
     navbarExtended.classList.add("visible");
@@ -28,37 +30,54 @@ for (let i = 0; i < color.length; i++){
         }
         color[i].childNodes[1].classList.add("color-active");
         if (i == 0) {
-            orderImg.src = "img/detailcar/president/presidentred.png";
+            orderImgParent.innerHTML = `
+                <img src="img/detailcar/president/presidentred.png" alt="car" class="order-img mt-xl-5">
+            `
         }
         if (i == 1) {
-            orderImg.src = "img/detailcar/president/presidentsilver.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentsilver.png" alt="car" class="order-img mt-xl-5">
+        `
         }
         if (i == 2) {
-            orderImg.src = "img/detailcar/president/presidentpurple.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentpurple.png" alt="car" class="order-img mt-xl-5">
+        `
         }
         if (i == 3) {
-            orderImg.src = "img/detailcar/president/presidentwhite.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentwhite.png" alt="car" class="order-img mt-xl-5">
+        `
         }
         if (i == 4) {
-            orderImg.src = "img/detailcar/president/presidentorange.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentorange.png" alt="car" class="order-img mt-xl-5">
+        `
         }
         if (i == 5) {
-            orderImg.src = "img/detailcar/president/presidentblack.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentblack.png" alt="car" class="order-img mt-xl-5">
+        `
         }
         if (i == 6) {
-            orderImg.src = "img/detailcar/president/presidentblue.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentblue.png" alt="car" class="order-img mt-xl-5">
+        `
         }
         if (i == 7) {
-            orderImg.src = "img/detailcar/president/presidentbrown.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentbrown.png" alt="car" class="order-img mt-xl-5">
+        `
         }
         if (i == 8) {
-            orderImg.src = "img/detailcar/president/presidentgray.png";
+            orderImgParent.innerHTML = `
+            <img src="img/detailcar/president/presidentgray.png" alt="car" class="order-img mt-xl-5">
+        `
         }
     })
 }
 
 
-let orderInterior = document.querySelectorAll(".order-interior");
 for (let i = 0; i < orderInterior.length; i++){
     orderInterior[i].addEventListener("click", (e) => {
         for (let j = 0; j < orderInterior.length; j++){
@@ -66,15 +85,19 @@ for (let i = 0; i < orderInterior.length; i++){
         }
         orderInterior[i].firstElementChild.classList.add("order-interior-active");
         if (i == 0) {
-            orderImg.src = "img/president/inte1.png";
+            orderImgParent.innerHTML = `
+            <iframe  width="100%" height="500px" allowfullscreen style="border-style:none;" src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//i.imgur.com/WfoCD7Z.jpg&amp;autoLoad=true"></iframe>
+            `;
         }
         if (i == 1) {
-            orderImg.src = "img/president/inte2.png";
+            orderImgParent.innerHTML = `
+            <iframe allowfullscreen width="100%" height="500px" style="border-style:none;" src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//i.imgur.com/PKRzbKh.jpg&amp;autoLoad=true"></iframe>
+            `;
         }
     })
 }
 
-
+console.log(orderImg.parentNode.innerHTML);
 
 let visa = document.getElementById("visa");
 let atm = document.getElementById("atm");
