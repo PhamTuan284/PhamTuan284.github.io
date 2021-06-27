@@ -1,3 +1,25 @@
+// let orderNextBtn = document.getElementById("orderNextBtn");
+// let orderColorTemp = document.querySelectorAll(".cardetail-color-colorpick");
+// let orderColorFinal = "";
+// let orderInteriorTemp = document.querySelectorAll(".order-interior");
+// let orderInteriorFinal = "";
+
+// orderNextBtn.onclick = () => {
+//     for (let i = 0; i < orderColorTemp.length; i++){
+//         if (orderColorTemp[i].firstElementChild.classList[2] === "color-active") {
+//             orderColorFinal = orderColorTemp[i].firstElementChild.parentElement;
+//         }
+//     }
+//     for (let i = 0; i < orderInteriorTemp.length; i++){
+//         if (orderInteriorTemp[i].firstElementChild.classList[0] === "order-interior-active") {
+//             orderInteriorFinal = orderInteriorTemp[i].firstElementChild.parentElement;
+//         }
+//     }
+//     console.log(orderColorFinal);
+//     console.log(orderInteriorFinal);
+// }
+
+
 let navbarExtended = document.querySelector(".navbar-extended");
 let orderInterior = document.querySelectorAll(".order-interior");
 let orderImgParent = document.querySelector(".orderImgParent");
@@ -96,8 +118,6 @@ for (let i = 0; i < orderInterior.length; i++){
         }
     })
 }
-
-console.log(orderImg.parentNode.innerHTML);
 
 let visa = document.getElementById("visa");
 let atm = document.getElementById("atm");
@@ -358,4 +378,3 @@ expirationDate.onchange = () => {
         expirationDate.classList.add("is-invalid")
     }
 }
-
