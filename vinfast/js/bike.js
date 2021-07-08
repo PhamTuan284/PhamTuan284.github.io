@@ -60,9 +60,9 @@ president.addEventListener("click", (ev) => {
                 <span>Ở tốc độ 30km/h được 101km</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="theon.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="theon.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -114,9 +114,9 @@ luxsa.addEventListener("click", (ev) => {
                 <span>4,8h (100% SOC)/pin</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="klara.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="klara.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
 
     </div>
     `
@@ -169,9 +169,9 @@ luxa.addEventListener("click", (ev) => {
                 <span>Ở tốc độ 30km/h được 90km</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="feliz.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="feliz.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
 
     </div>
     `
@@ -225,9 +225,9 @@ fadil.addEventListener("click", (ev) => {
                 <span>4,8h (100% SOC)/pin</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="impes.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="impes.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
 
     </div>
     `
@@ -281,9 +281,9 @@ vfe34.addEventListener("click", (ev) => {
                 <span>4,8h (100% SOC)/pin</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="ludo.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="ludo.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
 
     </div>
     `

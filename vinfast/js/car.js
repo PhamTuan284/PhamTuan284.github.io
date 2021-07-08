@@ -120,9 +120,9 @@ luxsa.addEventListener("click", (ev) => {
                 <span>4940 x 1960 x 1773 (mm)</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="luxsa.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="luxsa.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -177,9 +177,9 @@ luxa.addEventListener("click", (ev) => {
                 <span>4973 x 1900 x 1464 (mm)</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="luxa.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="luxa.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -235,9 +235,9 @@ fadil.addEventListener("click", (ev) => {
                 <span>3676 x 1632 x 1495 (mm)</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="fadil.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="fadil.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
@@ -293,9 +293,9 @@ vfe34.addEventListener("click", (ev) => {
                 <span>4300 x 1793 x 1613 mm</span>
             </div>
             <div class="car-info-slash d-none d-md-block"></div>
-            <a href="vfe34.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
+            <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-none d-md-block">Xem chi tiết</div></a>
         </div>
-        <a href="vfe34.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
+        <a href="president.html"><div class="btn btn-outline-dark car-info-btn d-block d-md-none m-auto">Xem chi tiết</div></a>
     </div>
     `
 })
