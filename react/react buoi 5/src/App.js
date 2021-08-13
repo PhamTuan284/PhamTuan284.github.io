@@ -4,7 +4,7 @@ import Sort from "./component/Sort";
 import Table from "./component/Table";
 import { useEffect, useState } from "react";
 
-const url = "https://fake-rest-api-nodejs.herokuapp.com/products";
+const url = "https://reactdatabase.herokuapp.com/products";
 
 function App() {
   const [products, setProducts] = useState([]);
