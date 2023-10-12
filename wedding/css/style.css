@@ -385,7 +385,7 @@ figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 600px;
+    height: 450px;
   }
 }
 
@@ -1072,7 +1072,7 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 0px;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 1.5;
   font-family: 'Ephesis', cursive;
 }
@@ -1089,7 +1089,7 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -1112,7 +1112,7 @@ form label {
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
-  padding: 15px 20px;
+  padding: 15px 80px;
   background: #fff !important;
   color: #f14e95;
   border: none !important;
@@ -1151,6 +1151,9 @@ form label {
 @media screen and (max-width: 768px) {
   #fh5co-counter .feature-center {
     margin-bottom: 50px;
+  }
+  .save-the-date {
+    bottom: -148px;
   }
 }
 
@@ -1379,11 +1382,12 @@ form label {
     font-size: 10px;
   }
   .fh5co-cover {
-    background-size: contain;
+    background-position: center !important;
     /* height: 488px; */
   }
   .fh5co-nav #fh5co-logo {
-    display: none;
+    text-align: center;
+    font-size: 30px;
   }
   /* row mobile */
   .row {
@@ -2511,10 +2515,6 @@ body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #f14e95;
 }
 
 /* Fading animation */
